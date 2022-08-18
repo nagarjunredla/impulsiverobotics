@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Working on Impulsive Robotics</title><link>http://impulsiverobotics.com/categories/working/</link><description>Recent content in Working on Impulsive Robotics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 May 2018 01:38:43 +0000</lastBuildDate><atom:link href="http://impulsiverobotics.com/categories/working/index.xml" rel="self" type="application/rss+xml"/><item><title>Redbot Extreme</title><link>http://impulsiverobotics.com/posts/2018-05-02-redbot-extreme/</link><pubDate>Wed, 02 May 2018 01:38:43 +0000</pubDate><guid>http://impulsiverobotics.com/posts/2018-05-02-redbot-extreme/</guid><description>After watching Professor Magnus Egerstedt speak at my college about swarm robotics, I thought I’d take the course he taught on Coursera called Control of Mobile Robots. It’s a very good course that was designed a few years ago and has an optional hardware track included. They made this part optional since it’s very difficult to keep up with ever changing DIY hardware and availability across the world. I wanted to try and follow the hardware part as well, so I went on a search for similar parts and got the newer Redbot with the Shadow Chassis.</description><content>&lt;p>After watching &lt;a href="https://magnus.ece.gatech.edu/">Professor Magnus Egerstedt&lt;/a> speak at my college about swarm robotics, I thought I’d take the course he taught on Coursera called &lt;a href="https://www.coursera.org/learn/mobile-robot">Control of Mobile Robots&lt;/a>. It’s a very good course that was designed a few years ago and has an optional hardware track included. They made this part optional since it’s very difficult to keep up with ever changing DIY hardware and availability across the world. I wanted to try and follow the hardware part as well, so I went on a search for similar parts and got the newer Redbot with the Shadow Chassis. Although very sturdy, the robot didn’t have enough space or mounting options for Sharp IR sensors that were needed for the course. I made do with some double sided tape, but it was still a pain. This robot was much sturdier than the usual robots with mounting holes everywhere, but still lacked something to make it a better learning platform. So I thought I’d make a few enhancements.&lt;/p>
+&lt;h3 id="parts">Parts&lt;/h3>
+&lt;ul>
+&lt;li>1x &lt;a href="https://www.sparkfun.com/products/12649">Sparkfun Inventor’s Kit for RedBot&lt;/a>&lt;/li>
+&lt;li>5x &lt;a href="https://www.robotshop.com/en/sharp-gp2y0a21yk0f-ir-range-sensor.html">Sharp GP2Y0A21YK0F IR Range Sensor&lt;/a>&lt;/li>
+&lt;li>5x &lt;a href="https://www.robotshop.com/en/sirc-01-sharp-gp2-ir-sensor-cable-8.html">SIRC-01 Sharp GP2 IR Sensor Cable – 8″&lt;/a>&lt;/li>
+&lt;li>1x &lt;a href="https://www.amazon.com/gp/product/B00N9SU5U0/ref=oh_aui_search_detailpage?ie=UTF8&amp;amp;psc=1">7.4v 5200mAh Lipo battery&lt;/a>&lt;/li>
+&lt;li>1x Raspberry Pi 3&lt;/li>
+&lt;li>1x &lt;a href="https://www.raspberrypi.org/products/camera-module-v2/">Raspberry Pi Camera Module v2&lt;/a>&lt;/li>
+&lt;li>1x &lt;a href="https://www.pololu.com/product/2851">Pololu 5V, 5A Step-Down Voltage Regulator D24V50F5&lt;/a>&lt;/li>
+&lt;li>Hookup Wire&lt;/li>
+&lt;li>1x Deans Ultra Plug Male&lt;/li>
+&lt;li>M3 screws and nuts&lt;/li>
+&lt;li>Nylon Screws and nuts for Raspberry Pi camera&lt;/li>
+&lt;li>Nylon Standoffs&lt;/li>
+&lt;/ul>
+&lt;h3 id="3d-printed-parts">3D Printed parts&lt;/h3>
+&lt;ul>
+&lt;li>5x &lt;a href="https://www.thingiverse.com/thing:1196071">Sparkfun Shadow Chassis Side Strut &amp;amp; Mounts&lt;/a>&lt;/li>
+&lt;li>1x &lt;a href="https://www.thingiverse.com/thing:2853753">Sparkfun Shadow Chassis Front Strut Raspberry Pi Camera Mount&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="assembly">Assembly&lt;/h3>
+&lt;h4 id="battery">Battery&lt;/h4>
+&lt;p>Remove the battery pack included in the kit. Then put the battery in the center, making sure it doesn’t push your hall effect sensors away from the magnets on the motor shafts. This is a very powerful battery so be very careful with it(I learnt it the hard way by accidentally shorting wires, I’m surprised I didn’t burn the house down). Take the included velcro strap and instead of wrapping it around the battery, cut off the ends and stick one side to the bot and the other side to the battery. This should make sure the battery doesn’t hit the encoders.&lt;/p>
+&lt;p>Disclaimer: You will lose the capability of stuffing a servo in the servo slot. Sparkfun mentioned building a robot arm on this thing, but I won’t be doing that ever on this robot so it’s fine I guess.&lt;/p>
+&lt;p>Don’t attach the top stage yet.&lt;/p>
+&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124232.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;h4 id="fasten-raspberry-pi-camera-and-sensors">Fasten Raspberry Pi Camera and sensors&lt;/h4>
+&lt;p>Attach the Raspberry Pi camera on to the 3D printed front strut. You won’t get to access this easily once assembled so make sure your connections are good.&lt;/p>
+&lt;p>Now would be a good time to screw the sensors onto the 3D printed side struts as well. Also wire the proximity sensors and push them through the hole under the RedBot board, so you don’t have to struggle to push them through tight spaces after the battery is in. The wires should be long enough.&lt;/p>
+&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124611.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;h4 id="attach-the-struts">Attach the struts&lt;/h4>
+&lt;p>I found an existing design on Thingiverse for struts with holes for a ToF sensor (which was in turn supposed to be a drop-in replacement for the Sharp IR sensor) so I got those printed and decided to modify the part for a Raspberry Pi camera.&lt;/p>
+&lt;p>Pretty straightforward, attach the struts to the bottom base first. Begin with the camera strut in the front center, and then add the four sensors on the corners and, if you want, you can add a fifth proximity sensor in the back (if you don’t mind charging the battery when it is in the chassis, since the sensor at the back blocks the battery).&lt;/p>
+&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>If you want to go beyond this step, I don’t think you should attach the top portion yet. Otherwise, you can attach it right now, making sure the LiPo battery terminals stick out the back end.&lt;/p>
+&lt;h4 id="make-mounting-holes-and-connect-raspberry-pi">Make Mounting holes and connect Raspberry Pi&lt;/h4>
+&lt;p>Pretty straightforward here too. Place your pi on the top part of the chassis, mark the holes and drill, I used a Dremel. Also make mounting holes on the side for the regulator. You can technically drill a hole after assembling the top part, but there’s a very high chance of puncturing the battery and causing an explosion. Don’t be stupid. Don’t do that. Please. I know it’s tempting.&lt;/p>
+&lt;p>Screw on some Nylon spacers and then the Raspberry Pi on top of that (I used spacers long enough to stick a Neural Compute Stick in the side without hitting the wheels, but that’s pointless, as you’ll soon realize).&lt;/p>
+&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;h4 id="check-connections-snap-together-drive-around">Check connections, snap together, drive around&lt;/h4>
+&lt;p>Check if you connected everything and then attach the top part of the RedBot. I used the Raspberry Pi 3 B+ not to look fancy but because many complex-er libraries aren’t compatible with it yet, but the &lt;a href="https://elinux.org/RPi-Cam-Web-Interface">RPi-Cam-Web-Interface&lt;/a> works, and it’s fun when you drive around with it. I had the ZigBee module on the Redbot and a controller from earlier, so that’s how it’s being driven around. I don’t think it’d be straightforward to have ZigBee comms coexist with serial communications with the Raspberry Pi, so don’t try adding a ZigBee module if you have no use for it.&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h3 id="conclusions">Conclusions&lt;/h3>
+&lt;p>If I had such sturdy proximity sensors when taking the Coursera course, it would’ve helped a lot. The simple single phase hall effect sensor based encoders kept me from overhauling the robot thinking it would be pointless. Quadrature encoders would’ve been sweet. After adding the camera, I realized it was pointless trying to extract a lot of info from a POV that was so low, so point in adding a Neural Compute stick or trying to piggyback a Google Vision kit on the RedBot: it’s just way too low for object recognition (or to just fit an entire object in its frame)&lt;/p>
+&lt;p>Want to take it further? Only sensible thing without going over the top would be to connect via I2C or USB. I was talking to a friend about this robot and he suggested we implement a machine learning algorithm on the robot. Since the algorithm’s output only needs to be throttle values for the two motors, we don’t really need the encoders. I was interested and saw a &lt;a href="https://www.youtube.com/watch?v=WtEYMELvRHI">similar project video on Youtube&lt;/a> for obstacle avoidance. Both of us have finals soon, so more on that after.&lt;/p></content></item><item><title>ROS enabled omnidirectional robot</title><link>http://impulsiverobotics.com/posts/2018-04-16-ros-enabled-omnidirectional-robot/</link><pubDate>Mon, 16 Apr 2018 07:47:36 +0000</pubDate><guid>http://impulsiverobotics.com/posts/2018-04-16-ros-enabled-omnidirectional-robot/</guid><description>This was a project that incrementally grew to become one of the more complex robots I’ve ever built. I was interested in checking out how omni wheels work after I saw a video of a robot made by a high school friend’s startup that paints walls. I had no idea on how to control a robot with omni wheels. A quick google search later I realized they looked real cool and I decided to build one.</description><content>&lt;p>This was a project that incrementally grew to become one of the more complex robots I’ve ever built. I was interested in checking out how &lt;a href="https://en.wikipedia.org/wiki/Omni_wheel">omni wheels&lt;/a> work after I saw a video of a robot made by a high school friend’s startup that paints walls. I had no idea on how to control a robot with omni wheels. A quick google search later I realized they looked real cool and I decided to build one.&lt;/p>
+&lt;p>The wheels individually cost a lot. I found a really &lt;a href="https://www.thingiverse.com/thing:1276446">good design on thingiverse&lt;/a>, but after realizing that working with pololu micro metal gearmotors with encoders in tiny spaces can be a pain, I thought I’d look around more. I finally came across a &lt;a href="https://www.robotshop.com/en/3wd-48mm-omni-directional-triangle-mobile-robot-chassis.html">chassis with motor kit&lt;/a> at Robotshop which looked cool and wasn’t that expensive either. I remember finding listings of the same chassis with an Arduino on AliExpress, but can’t find it anymore.&lt;/p>
+&lt;p>A lot of websites online mentioned omni wheels don’t perform that well on uneven surfaces and can’t carry a lot of weight. I was surprised to learn how heavy the robot was after it arrived. Seeing how big it was, I started overplanning as usual. I’ve never worked on the individual components used in this project before (other than the camera), and neither have I built a physical ROS robot from the scratch. I’m confident about it, and hopefully it should work.&lt;/p>
+&lt;h3 id="parts">Parts&lt;/h3>
+&lt;ul>
+&lt;li>1x &lt;a href="https://www.adafruit.com/product/3405">Adafruit HUZZAH32&lt;/a>&lt;/li>
+&lt;li>1x &lt;a href="https://www.robotshop.com/en/3wd-48mm-omni-directional-triangle-mobile-robot-chassis.html">3WD 48mm Omni-Directional Triangle Mobile Robot Chassis&lt;/a>&lt;/li>
+&lt;li>2x L298N Motor Driver&lt;/li>
+&lt;li>1x &lt;a href="https://www.amazon.com/gp/product/B071DJKXRD/ref=oh_aui_search_detailpage?ie=UTF8&amp;amp;psc=1">11.1v LiPo battery pack&lt;/a>&lt;/li>
+&lt;li>1x &lt;a href="http://www.up-board.org/upcore/">Aaeon UP Core&lt;/a>&lt;/li>
+&lt;li>1x &lt;a href="https://click.intel.com/intelr-realsensetm-depth-camera-d435.html">Intel Realsense D435 3D Camera&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="build">Build&lt;/h3>
+&lt;h4 id="power-and-motor-drivers">Power and Motor Drivers&lt;/h4>
+&lt;p>Since it had two sections and the motors ran on 12V, I wanted to dedicate the first level for the motor drivers and a good battery, and I didn’t want to put a step-up to power motors. I ordered a few 11.1V LiPo batteries and decided to use two extra L298N motor drivers I had from a hydroponics controller project. The motor drivers and the battery fit perfectly in the lower level.&lt;/p>
+&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131007-e1525301525382-1024x768.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;h4 id="microcontroller-circuit">Microcontroller Circuit&lt;/h4>
+&lt;p>Looking at all the room I had on the top, I wanted to keep this as wire-clean as possible. The three motors needed 6 PWM capable pins (2 each) to drive, and 6 (preferably) interrupt capable pins for encoders. This rules out almost all AVR Arduino boards with a small footprint. This also rules out being able to add enough sensors to the microcontroller. For awesome compatibility, as usual, I decided to go for an Adafruit Feather board. I didn’t want a feather with an extra chip on-board for wireless (WiFi or BLE), I wanted to try out the new ESP32 instead. What’s more interesting is that the chip also supports rosserial, making it swappable with other Huzzah boards. ESP32 guzzles too much power? For what I had in mind for this project, it doesn’t really amount to that much. Plus, if you want to make the robot without the UP Core, the onboard 5v regulators on the L298N drivers should be more than enough to power the microcontroller.&lt;/p>
+&lt;p>The ARM M0+, Teensy and ESP32 feather boards have all interrupt capable pins.&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;em>TODO : Solder I2C Female Header Pins for IMU&lt;/em>&lt;!-- raw HTML omitted --> Not required, yet.&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;em>TODO : &lt;a href="https://forums.adafruit.com/viewtopic.php?f=24&amp;amp;t=112430&amp;amp;p=562071&amp;amp;hilit=diode+usb+power">Solder diode to protect USB from external power&lt;/a>&lt;/em>&lt;!-- raw HTML omitted --> – Done&lt;/p>
+&lt;p>&lt;em>TODO : Add Step Down Regulator to power UP Core&lt;/em>&lt;/p>
+&lt;h4 id="computer-mount">Computer Mount&lt;/h4>
+&lt;p>After I thought of the possibility of using the realsense camera, I began thinking of how to mount the UP Board AND the microcontroller on the same plane (along with the camera). More than the space, I was worried about the connection to the camera. The UP Board has a USB 3.0 OTG port, which needs an adapter before connecting to the USB cable to the camera. I had troubles with the R200 before, and I didn’t want to take any chances. While I was thinking about this, I found that the UP core had released. While I was contemplating spending on the UP Core, the UP Board team decided to put a sticky banner on their homepage with a countdown announcing AI on the edge. I was very excited about it and decided to wait it out instead of buying the UP Core. After the countdown, I realized it was just a pre-order launch of a PCIe card for the Movidius 2 chip and an announcement of a really cool UP Core Plus board (with actual photos of expansion boards) which I can’t buy right now anyway.&lt;/p>
+&lt;p>Why the UP Core? Many reasons really.&lt;/p>
+&lt;ul>
+&lt;li>Integrated WiFi + BLE: Really necessary, I usually forget to account for the space USB devices take up.&lt;/li>
+&lt;li>Full Sized USB 3.0 Port: Much more convenient to connect the camera instead of using the adapter on the UP Board (You could use the mini USB 3.0 to mini USB 3.0 cable, but I couldn’t find one anywhere outside the UP Board Shop.)&lt;/li>
+&lt;li>Same Power, Smaller Size: Post-It sized x86 Single Board Computer!? Count me in!&lt;/li>
+&lt;li>Fanless Heatsink: I couldn’t mount the UP Board with the case and an exposed fanned heatsink would mean dust accumulation, a fanless system is much better.&lt;/li>
+&lt;li>&lt;a href="https://up-shop.org/up-peripherals/181-usb-20-pin-header-cable-wo-uart.html">USB 2.0 expansion cable&lt;/a>: Conveniently break out USB devices away from the board and tuck the wires inside the robot. Still gets a USB 2.0, but I can accommodate a Movidius Neural Compute Stick if required (Without the huge thing sticking out of the robot)&lt;/li>
+&lt;/ul>
+&lt;p>I decided to hoist the UP Core above the microcontroller circuit with my favorite nylon standoffs. The WiFi antenna might be optional, but I really wanted to use it. Antennae are important, people. I was curious enough to buy the Aluminum case for the UP Core and kowing how it fit in the case that I popped open the stock heatsink and THEN realized I couldn’t put it back. At this point I didn’t really have a choice: I had to use the case. The mounting holes are in the same place so that shouldn’t affect anything if you want to mount the UP Core as is. The Aluminum case is pretty heavy, so I decided to go for a smaller PCB for the microcontroller stage to keep it from buckling under the weight of the case.&lt;/p>
+&lt;h4 id="camera-mount">Camera Mount&lt;/h4>
+&lt;p>I decided to 3D print the mount so I don’t accidentally damage the camera by trying out weird brackets lying around. I came up with a &lt;a href="https://www.thingiverse.com/thing:2864087">simple design&lt;/a> to mount it on the corner of the robot. The three holes on the robot are parts of the longer slit on the chassis rather than screw holes, it just needs to be securely tightly to avoid slipping. I removed material between screws on the camera to show off the Realsense logo (Represent).&lt;/p>
+&lt;p>At this point I decided to check if the circuit was working properly, and realized two of the three motor encoders weren’t working. One of them had a missing capacitor that broke the circuit, and I can’t solder such small SMT components. I emailed RobotShop and they contacted the manufacturer to send me replacement parts. We don’t need the encoders for a while till the entire build is complete, so let’s work on setting up the software instead.&lt;/p>
+&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131530.jpg?resize=768%2C1024&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;h3 id="setting-up-the-software">Setting up the software&lt;/h3>
+&lt;h4 id="setting-up-orb-slam2">Setting up ORB-SLAM2&lt;/h4>
+&lt;p>ORB-SLAM2 was one of the first SLAM libraries that I heard of. I decided to go with this. The software setup is pretty straightforward. Follow the instructions on the &lt;a href="https://github.com/raulmur/ORB_SLAM2">Github page&lt;/a>. Setup the prerequisites as mentioned in the page carefully making sure all of them are installed properly. Before running the final &lt;code>./build.sh&lt;/code> script, we need to make a very tiny change. The UP Core might not &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/242">run out of memory during the build&lt;/a>. Mine kept getting stuck at 59% before it said virtual memory ran out. Open the &lt;code>build.sh&lt;/code> file and changed the last line from&lt;/p>
+&lt;pre tabindex="0">&lt;code>make -j
+&lt;/code>&lt;/pre>&lt;p>to&lt;/p>
+&lt;pre tabindex="0">&lt;code>make -j1
+&lt;/code>&lt;/pre>&lt;p>you could try sensible higher numbers, I haven’t tried it though. I took help from a &lt;a href="https://medium.com/@j.zijlmans/orb-slam-2052515bd84c">medium article&lt;/a> and tried working on the TU-Munich dataset. Everything worked fine but the viewer kept freezing at the end. There were a few open issues mentioning that &lt;!-- raw HTML omitted --> and I don’t think it’s something that affects the core software I thought I’d go ahead with ROS&lt;!-- raw HTML omitted --> &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/547">and turns out you need to install an older version of Pangolin&lt;/a>.&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>So the Intel D400 cameras come with factory loaded parameters, and they’re published on a topic in the realsense ROS node. We can get those parameters by running &lt;code>rostopic echo /camera/color/camera_info&lt;/code>, This is what the output looks like&lt;/p>
+&lt;pre tabindex="0">&lt;code>header:
+seq: 47
+stamp:
+secs: 1529978641
+nsecs: 358682339
+frame_id: &amp;#34;camera_color_optical_frame&amp;#34;
+height: 480
+width: 640
+distortion_model: &amp;#34;plumb_bob&amp;#34;
+D: [0.0, 0.0, 0.0, 0.0, 0.0]
+K: [616.7030029296875, 0.0, 300.7779235839844, 0.0, 616.4176025390625, 234.95497131347656, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [616.7030029296875, 0.0, 300.7779235839844, 0.0, 0.0, 616.4176025390625, 234.95497131347656, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi:
+x_offset: 0
+y_offset: 0
+height: 0
+width: 0
+do_rectify: False
+---
+&lt;/code>&lt;/pre>&lt;p>The parameters published in the camera ROS topic gives us the values for fx, fy, cx, cy from K, and k1, k2, p1, p2, k3 from D (&lt;a href="https://github.com/IntelRealSense/librealsense/blob/165ae36b350ca950e4180dd6ca03ca6347bc6367/third-party/realsense-file/rosbag/msgs/sensor_msgs/CameraInfo.h#L268">more info&lt;/a>). From the &lt;a href="https://www.intel.com/content/dam/support/us/en/documents/emerging-technologies/intel-realsense-technology/Intel-RealSense-D400-Series-Datasheet.pdf">datasheet&lt;/a>, we get the baseline to be 55mm for D415 and 50mm for D435. The value for bf is &lt;code>bf = baseline (in meters) * fx&lt;/code>. This is the YAML file I used for D415&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h4 id="setting-up-ros-node">Setting up ROS node&lt;/h4>
+&lt;p>Since the realsense node publishes camera data on &lt;code>/camera/color/image_raw&lt;/code> and depth data on &lt;code>/camera/depth/image_rect_raw&lt;/code> we need to change it to these links in &lt;code>~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_rgbd.cc&lt;/code>. After that make sure you have ROS_PACKAGE_PATH pointed to the right directory of ORB_SLAM2 and run &lt;code>./build_ros.sh&lt;/code>&lt;/p>
+&lt;h4 id="running-the-nodes">Running the nodes&lt;/h4>
+&lt;p>In one terminal, start &lt;code>roscore&lt;/code>. In another terminal, source the environment variables of ORB SLAM2&lt;/p>
+&lt;pre tabindex="0">&lt;code>source ~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
+&lt;/code>&lt;/pre>&lt;p>and then run the node with&lt;/p>
+&lt;pre tabindex="0">&lt;code>rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
+&lt;/code>&lt;/pre>&lt;p>Once the ORB SLAM node is running, open a third terminal window and run the Intel Realsense node. The output should look like this&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>As you can see, ORB SLAM initializes immediately and rarely loses tracking. I tried using Monocular version with footage from my Ryze Tello, but it took a while to initialize and kept losing track. The RGB-D version looks much more reliable. I was surprised to see that the UP Core handled it well.&lt;/p>
+&lt;p>I wanted to evaluate ORB-SLAM2 with an RGBD camera only because my monocular tests were failing because of calibration problems or poor image quality. To be fair I tried it on the Ryze (DJI?) Tello. I got some buggy results:&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>Since the robot is built and and it’s compute capability is validated, next steps are to write Arduino code for the HUZZAH32 board. The kit came with faulty wheel encoders and even though Robotshop sent me replacements for two motors, one of them was still faulty. So now I have 5 motors with 2 functioning wheel encoders.&lt;/p></content></item></channel></rss>
