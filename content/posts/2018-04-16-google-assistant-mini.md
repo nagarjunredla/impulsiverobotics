@@ -18,7 +18,9 @@ As of writing this post, the Google AIY Voice Kit is available and pretty cheap 
 
 Since saying “I couldn’t build the DIY kit because it was sold out” is self-contradictory, I looked through the interwebs to see if I could find anything. I went on a long journey of evaluating various boards with mic arrays, which I will talk about in another post. There was a small board that I liked called the ReSpeaker 2 mics Hat and it was by Seeed Studio, a company with a stronger track record for DIY projects than the other boards I tried.
 
-<figure aria-describedby="caption-attachment-41" class="wp-caption aligncenter" id="attachment_41" style="width: 459px">[![ReSpeaker 2-Mics Pi HAT](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/dsz3Q3vnIlGIjbZvWpDcyYzD.jpg?resize=459%2C230&ssl=1)](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html)<figcaption class="wp-caption-text" id="caption-attachment-41">Seeed Studio’s ReSpeaker 2-Mics Pi HAT</figcaption></figure>It was mysteriously out of stock at the time, and I attributed it to Seeed Studio pushing their other line of [ReSpeaker products](https://www.seeedstudio.com/ReSpeaker-Core-v2.0-p-3039.html), but as of writing this post they’re [back in stock](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html), and at half the price I got them for (on Amazon).
+![ReSpeaker 2-Mics Pi HAT](https://lh3.googleusercontent.com/mpveHjQiNUHVGsi75EJOu3Vzhrl1SJgxF5uII5zxRHThTZmcfRCEX42bO4JEx70Bstbie0KUvA3HtzDmJ2HoEBWfPe-XMunumMqKG8vXnm3Dw_J5FBKJpCdU2mxJtCnLjoeKlsc5PGv4bSjL03ryqBfpHhh3taHI5n0XZfOsbpZpgKovC8EBDic-PgSwIZ5X42djHHrT0oICz8SaRWKm1L634HBME-0LkGeyIv35iO5CUwaLwyuvCYSsRZG7Cw3wNXy_ME9G50gzRXG5XxcjQ-E27w3__okQquNyS0zexyiii7VORM-pxDeHlX47ftLZ1GHzZhZvgebwXWydOHhx7ZICVKVsHIV7C-Gj4RKF4C1IFpFv3ZZz1hZsmGI28iaTj5f0KYUj8UcKZUPTydgjbDhZgOKFeSXHLGK4RNP5rM-aLRcspSXnkB28f2CbKIGy4qGdBBNA2s4XPEVKeUpn6cRTFBToL2RfghJ4tSvxcK_jc9PBedEYWle-_NIqdoi1H8RpuNzVIcXQW3jEcY4T9Cvu_3Mmy4OajLYfmPPN5CvNMWry2K6R7LlXXakGWa09EiH60xZKX108wd45XXqMxnoBVloUXqAKnEl32Ty0xA-wsLKOj1MgltJD8pWXb8ujs4K_litDrBVTWOh0Rv5XV9bubHHnoZN-1zgDgb12I4ZyvYysEdO09OIzI3cHKQVOePU6lm2qrysXZj4XjGONHyuldUnpMIxWdvScmzuomSRHX1LujvKKCBAiHOlesGM=w1726-h1294-no?authuser=0 "Seeed Studio’s ReSpeaker 2-Mics Pi HAT")
+
+It was mysteriously out of stock at the time, and I attributed it to Seeed Studio pushing their other line of [ReSpeaker products](https://www.seeedstudio.com/ReSpeaker-Core-v2.0-p-3039.html), but as of writing this post they’re [back in stock](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html), and at half the price I got them for (on Amazon).
 
 This board has everything you need to get started on the Google Assistant. There is no EEPROM like the AIY kit, but the official Google Assistant SDK doesn’t work on the Raspberry Pi Zero out of the box anyway, so we don’t really need it. It even has a button and three RGB LEDs! If the AIY Voice Kit was the DIY equivalent of the Google Home, I guess this is the DIY equivalent of the Google Home Mini. As always, I over-planned all the things I thought I could do with this and hit a few roadblocks, but let’s see how far we can go.
 
@@ -46,7 +48,7 @@ Solder the GPIO headers on the Raspberry Pi Zero (or you can be fancy and buy it
 
 When you’re building Raspberry Pi projects that are always connected to the internet, you must configure them to change default values. So let’s first ssh into the Pi, the default username is `pi` and password is `raspberry` and can be found at `raspberrypi.local` (or look up the pi’s IP address)
 
-```
+``` shell
 ssh pi@raspberrypi.local
 ```
 
@@ -58,26 +60,26 @@ Once you’ve logged in it’s good practice to get used to immediately changing
 
 If you thought `raspberrypi.local` sounds too common, we’re going to change that next. If you’re amazing at remembering numbers you can just stick to the IP address (hence the optional step). Start by typing
 
-```
+``` shell
 sudo raspi-config
 ```
 
 in the configuration menu select `Network Options` and then select `Hostname`. Change it to whatever you want. I’m naming this one `google-assistant-mini`. Also enable SPI in `Interfacing Options`. If the config menu doesn’t ask you to reboot when you say finish, do it yourself by typing `sudo reboot` in the terminal. The pi should now reboot, this time with the new hostname. (Optional: Now would be a good time to remove the old hostname from your computer’s ssh records by running `ssh-keygen -R raspberrypi.local`. This ensures there’s no problem when setting up another pi).  
 SSH into the pi again, but with the new hostname this time
 
-```
+``` shell
 ssh pi@google-assistant-mini.local
 ```
 
 Once you’re in, make sure everything is up-to-date by running
 
-```
+``` shell
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 If you’re like me and installed the lite version of the OS, git and pip aren’t included and we need them to install drivers for the ReSpeaker Hat. So do that by running
 
-```
+``` shell
 sudo apt-get install git python-pip
 ```
 
@@ -93,7 +95,7 @@ Follow the [Google Assistant Service setup guide](https://developers.google.com/
 
 And that… was pretty simple to set up. There were driver issues with the hat and the Google Assistant setup for the Pi Zero wasn’t this straightforward when I first got the hat. Then again, that wasn’t too long ago. It’s amazing how fast this side of DIY is moving.
 
-I really liked this board because it’s got just enough to properly emulate a Google Home device. The LEDs can be used to give feedback, the respeaker hat repository has a video of the push button example, but we could use that for the mute button on the Google Home. So the next thing to work on would be to run the assistant along with the LEDs <del>and probably try a headless setup.</del> ([*update: Google bein’ sly*](https://github.com/shivasiddharth/GassistPi/issues/136#issuecomment-362110323))
+I really liked this board because it’s got just enough to properly emulate a Google Home device. The LEDs can be used to give feedback, the respeaker hat repository has a video of the push button example, but we could use that for the mute button on the Google Home. So the next thing to work on would be to run the assistant along with the LEDs ~~and probably try a headless setup.~~ ([*update: Google bein’ sly*](https://github.com/shivasiddharth/GassistPi/issues/136#issuecomment-362110323))
 
 ### Next Steps?
 

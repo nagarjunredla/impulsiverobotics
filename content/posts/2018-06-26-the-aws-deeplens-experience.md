@@ -17,7 +17,7 @@ I had a great time at Intel AI DevCon 2018. They gave out a few goodies which in
 
 When the DeepLens first arrived, I was surprised to see how big it was. I’d expected it to be smaller, I guess? The Intel Inside badge is what separates this thing from other common developer devices. The device is pretty light and uses a 5V 4A power supply.
 
-![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&ssl=1)
+![Deeplens and some amazon boxes](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&ssl=1)
 
 ### Tech Specs
 
@@ -27,7 +27,7 @@ This thing has a Dual Core Intel Atom E3930, 8GB RAM and 16GB in-built memory. C
 
 ### I/O
 
-![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&ssl=1)
+![Deeplens IO](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&ssl=1)
 
 The DeepLens has a ton of I/O that you can make use of. It has a micro SD card slot, a micro HDMI, an audio line out and two very misleading USB2.0 ports that are blue like USB3.0. A quick `lsusb` shows that the device is capable of USB3.0, but the camera and the USB ports on the back are on the USB2.0 bus. The AWS component of this device makes it easy to use without a monitor, but I’d recommend a micro HDMI adapter for this.
 
@@ -49,7 +49,7 @@ The Deep Learning Deployment Toolkit only includes the Model Optimizer for MXNet
 
 Download the [Caffe GoogLeNet SSD model](https://software.intel.com/file/609199/download) provided by Intel and unzip it. Then run the model optimizer using
 
-```
+```shell
 python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo.py --input_model ~/Downloads/SSD_GoogleNetV2.caffemodel --input_proto ~/Downloads/SSD_GoogleNetV2_Deploy.prototxt --output_dir ~/Downloads/
 ```
 
@@ -59,7 +59,7 @@ This generates two IR (Intermediate Representation) files `SSD_GoogleNetV2.xml` 
 
 There are many samples included in the inference engine directory. I’ll try the object detection SSD sample. First, build the examples.
 
-```
+```shell
 cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples
 cmake .
 sudo make install
@@ -68,12 +68,13 @@ cd intel64/Release
 
 Now run the Object Detection Demo SSD Async using
 
-```
+```shell
 ./object_detection_demo_ssd_async -i /opt/awscam/out/ch2_out.mjpeg -m ~/Downloads/SSD_GoogleNetV2.xml -d CPU
 ```
 
 You should see a stream with predictions. The frame rate averages between 1 and 2 frames per second.
 
-<figure aria-describedby="caption-attachment-150" class="wp-caption aligncenter" id="attachment_150" style="width: 1024px">![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/screenshot.png?resize=1024%2C576&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-150">Inference Engine SSD Sample</figcaption></figure>## Conclusion
+![SSD Inference example](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/screenshot.png?resize=1024%2C576&ssl=1 "Inference Engine SSD Sample")
+## Conclusion
 
 This is a very cool tool to have. I had trouble getting a screenshot of better fps performance, since performing any other task, like taking a screenshot, hangs the application for a few seconds. It is critically designed to handle the Inference Engine and AWS lambda and greengrass. I wouldn’t use it for timing critical applications, in such cases it’s better to offload inference to the Movidius NCS anyway. But to try out vision based deep learning at home, this is awesome. The toolkit currently under active development. The Python SDK was in preview when I got the DeepLens but it is now available in a newer release. Unlike my usual problem with running out of ports on SBCs, the DeepLens has a few free ports. Let’s see how I can integrate this into a project.

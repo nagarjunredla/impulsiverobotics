@@ -44,9 +44,9 @@ Looking at all the room I had on the top, I wanted to keep this as wire-clean as
 
 The ARM M0+, Teensy and ESP32 feather boards have all interrupt capable pins.
 
-<del>*TODO : Solder I2C Female Header Pins for IMU*</del> Not required, yet.
+~~*TODO : Solder I2C Female Header Pins for IMU*~~ Not required, yet.
 
-<del>*TODO : [Solder diode to protect USB from external power](https://forums.adafruit.com/viewtopic.php?f=24&t=112430&p=562071&hilit=diode+usb+power)*</del> – Done
+~~*TODO : [Solder diode to protect USB from external power](https://forums.adafruit.com/viewtopic.php?f=24&t=112430&p=562071&hilit=diode+usb+power)*~~ – Done
 
 *TODO : Add Step Down Regulator to power UP Core*
 
@@ -78,23 +78,24 @@ At this point I decided to check if the circuit was working properly, and realiz
 
 ORB-SLAM2 was one of the first SLAM libraries that I heard of. I decided to go with this. The software setup is pretty straightforward. Follow the instructions on the [Github page](https://github.com/raulmur/ORB_SLAM2). Setup the prerequisites as mentioned in the page carefully making sure all of them are installed properly. Before running the final `./build.sh` script, we need to make a very tiny change. The UP Core might not [run out of memory during the build](https://github.com/raulmur/ORB_SLAM2/issues/242). Mine kept getting stuck at 59% before it said virtual memory ran out. Open the `build.sh` file and changed the last line from
 
-```
+```shell
 make -j
 ```
 
 to
 
-```
+```shell
 make -j1
 ```
 
 you could try sensible higher numbers, I haven’t tried it though. I took help from a [medium article](https://medium.com/@j.zijlmans/orb-slam-2052515bd84c) and tried working on the TU-Munich dataset. Everything worked fine but the viewer kept freezing at the end. There were a few open issues mentioning that <del> and I don’t think it’s something that affects the core software I thought I’d go ahead with ROS</del> [and turns out you need to install an older version of Pangolin](https://github.com/raulmur/ORB_SLAM2/issues/547).
 
-<figure aria-describedby="caption-attachment-123" class="wp-caption aligncenter" id="attachment_123" style="width: 600px">![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/ezgif-4-be7aa06151.gif?resize=600%2C338&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-123">ORB-SLAM2 working on the TUM1 dataset. Another gif, sorry.</figcaption></figure>#### Getting Camera Parameters
+![ORB-SLAM2 gif](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/ezgif-4-be7aa06151.gif?resize=600%2C338&ssl=1 "ORB-SLAM2 working on the TUM1 dataset. Another gif, sorry.")
+#### Getting Camera Parameters
 
 So the Intel D400 cameras come with factory loaded parameters, and they’re published on a topic in the realsense ROS node. We can get those parameters by running `rostopic echo /camera/color/camera_info`, This is what the output looks like
 
-```
+```yaml
 header: 
   seq: 47
   stamp: 
@@ -131,13 +132,13 @@ Since the realsense node publishes camera data on `/camera/color/image_raw` and 
 
 In one terminal, start `roscore`. In another terminal, source the environment variables of ORB SLAM2
 
-```
+```shell
 source ~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
 ```
 
 and then run the node with
 
-```
+```shell
 rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
 ```
 
@@ -149,6 +150,7 @@ As you can see, ORB SLAM initializes immediately and rarely loses tracking. I tr
 
 I wanted to evaluate ORB-SLAM2 with an RGBD camera only because my monocular tests were failing because of calibration problems or poor image quality. To be fair I tried it on the Ryze (DJI?) Tello. I got some buggy results:
 
-<figure aria-describedby="caption-attachment-200" class="wp-caption aligncenter" id="attachment_200" style="width: 600px">![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/tello_slam_gif.gif?resize=600%2C290&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-200">kept losing track often</figcaption></figure>Next step would be to try RTAB-Map. It’s catkinized and has a better dev community.
+![Tello SLAM gif](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/tello_slam_gif.gif?resize=600%2C290&ssl=1 "kept losing track often")
+Next step would be to try RTAB-Map. It’s catkinized and has a better dev community.
 
 Since the robot is built and and it’s compute capability is validated, next steps are to write Arduino code for the HUZZAH32 board. The kit came with faulty wheel encoders and even though Robotshop sent me replacements for two motors, one of them was still faulty. So now I have 5 motors with 2 functioning wheel encoders.

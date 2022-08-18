@@ -5,3 +5,14 @@ theme = 'terminal'
 [params]
     author = 'Nagarjun Redla'
     description = 'Overcompensation for Underactuation'
+
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'about'
+  url = '/about/'
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[markup.goldmark.renderer]
+unsafe = true

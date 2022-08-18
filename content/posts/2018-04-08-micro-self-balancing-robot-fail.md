@@ -42,11 +42,16 @@ The connections are pretty straightforward. The MPU-9250 is connected to the mic
 
 I don’t have many photos of the making process, so I tried using Fritzing to make it simpler. I’m new to Fritzing and I hope it’s understandable.
 
-<figure aria-describedby="caption-attachment-58" class="wp-caption aligncenter" id="attachment_58" style="width: 1024px">![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-6.08.10-PM.png?resize=1024%2C659&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-58">Fritzing Breadboard Circuit. Sensor stick -&gt; MPU 9250, Micro Metal Gearmotor -&gt; Sub Micro Plastic Gearmotor</figcaption></figure><figure aria-describedby="caption-attachment-61" class="wp-caption aligncenter" id="attachment_61" style="width: 128px">![Circuit back](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180408_180542.jpg?resize=128%2C300&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-61">“Art”.</figcaption></figure>### Design
+![Fritzing Circuit](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-6.08.10-PM.png?resize=1024%2C659&ssl=1 "Fritzing Breadboard Circuit. Sensor stick: MPU 9250, Micro Metal Gearmotor: Sub Micro Plastic Gearmotor")
+
+![Circuit back](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180408_180542.jpg?resize=128%2C300&ssl=1 "'Art.'")
+
+### Design
 
 This clearly needs a base/chassis, so I decided to 3D print it, why not? The only problem is that I never worked on CAD software. I searched for the best CAD software for dummies and found 123D Design. I literally made cylinder holes in a cuboid for the motors and made two versions: one with 35% of the cuboid cut off from the bottom and the other 40%.
 
-<figure aria-describedby="caption-attachment-55" class="wp-caption aligncenter" id="attachment_55" style="width: 1024px">![design](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-5.17.42-PM.png?resize=1024%2C534&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-55">123D Design in various stages</figcaption></figure>I don’t intend to put the design up on Thingiverse. If you still want it, [you can have it](https://impulsiverobotics.com/wp-content/uploads/2018/04/piddytry.zip).
+![design](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-5.17.42-PM.png?resize=1024%2C534&ssl=1 "123D Design in various stages")
+I don’t intend to put the design up on Thingiverse. If you still want it, [you can have it](https://impulsiverobotics.com/wp-content/uploads/2018/04/piddytry.zip).
 
 ### Assemble
 

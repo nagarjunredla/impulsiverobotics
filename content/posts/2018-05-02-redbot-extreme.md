@@ -60,7 +60,7 @@ I found an existing design on Thingiverse for struts with holes for a ToF sensor
 
 Pretty straightforward, attach the struts to the bottom base first. Begin with the camera strut in the front center, and then add the four sensors on the corners and, if you want, you can add a fifth proximity sensor in the back (if you don’t mind charging the battery when it is in the chassis, since the sensor at the back blocks the battery).
 
-![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&ssl=1)
+![without the top on](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&ssl=1)
 
 If you want to go beyond this step, I don’t think you should attach the top portion yet. Otherwise, you can attach it right now, making sure the LiPo battery terminals stick out the back end.
 
@@ -70,13 +70,15 @@ Pretty straightforward here too. Place your pi on the top part of the chassis, m
 
 Screw on some Nylon spacers and then the Raspberry Pi on top of that (I used spacers long enough to stick a Neural Compute Stick in the side without hitting the wheels, but that’s pointless, as you’ll soon realize).
 
-![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&ssl=1)
+![closeup](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&ssl=1)
 
 #### Check connections, snap together, drive around
 
 Check if you connected everything and then attach the top part of the RedBot. I used the Raspberry Pi 3 B+ not to look fancy but because many complex-er libraries aren’t compatible with it yet, but the [RPi-Cam-Web-Interface](https://elinux.org/RPi-Cam-Web-Interface) works, and it’s fun when you drive around with it. I had the ZigBee module on the Redbot and a controller from earlier, so that’s how it’s being driven around. I don’t think it’d be straightforward to have ZigBee comms coexist with serial communications with the Raspberry Pi, so don’t try adding a ZigBee module if you have no use for it.
 
-<figure aria-describedby="caption-attachment-107" class="wp-caption aligncenter" id="attachment_107" style="width: 600px">![](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/ezgif-1-b9451edde9.gif?resize=600%2C338&ssl=1)<figcaption class="wp-caption-text" id="caption-attachment-107">A gif of a video of a video. Kewlbeenz</figcaption></figure>(On a side note, the text on the top looks familiar from a [TechCrunch Disrupt video](https://youtu.be/sUfqmjM9_VE?t=4m).. and this web interface only works with the Raspberry Pi Camera Module. hmm..)
+![POV cam gif](https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/ezgif-1-b9451edde9.gif?resize=600%2C338&ssl=1 "A gif of a video of a video.")
+
+(On a side note, the text on the top looks familiar from a [TechCrunch Disrupt video](https://youtu.be/sUfqmjM9_VE?t=4m).. and this web interface only works with the Raspberry Pi Camera Module. hmm..)
 
 ### Conclusions
 
