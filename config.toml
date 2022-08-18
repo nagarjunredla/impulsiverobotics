@@ -1,0 +1,7 @@
+baseURL = 'http://impulsiverobotics.com/'
+languageCode = 'en-us'
+title = 'Impulsive Robotics'
+theme = 'terminal'
+[params]
+    author = 'Nagarjun Redla'
+    description = 'Overcompensation for Underactuation'
