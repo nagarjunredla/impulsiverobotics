@@ -1,4 +1,4 @@
-baseURL = 'http://impulsiverobotics.com/'
+baseURL = 'https://nagarjunredla.github.com/impulsiverobotics'
 languageCode = 'en-us'
 title = 'Impulsive Robotics'
 theme = 'terminal'
