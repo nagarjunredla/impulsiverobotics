@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Impulsive Robotics</title><link>https://www.impulsiverobotics.com/posts/</link><description>Recent content in Posts on Impulsive Robotics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 02 Sep 2018 02:01:52 +0000</lastBuildDate><atom:link href="https://www.impulsiverobotics.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>My Donkeycar Build experience</title><link>https://www.impulsiverobotics.com/posts/2018-09-02-my-donkeycar-build-experience/</link><pubDate>Sun, 02 Sep 2018 02:01:52 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-09-02-my-donkeycar-build-experience/</guid><description>I’ve been interested in building a self-navigating robot for a while from hobby electronics. The problem was that I tried adding to the complexity by taking too many variables into account. I tried multiple differential drive kits only to realize some tiny part about it wouldn’t make it feasible to use. I will revisit these issues in a build I’ve been working on for a while, but wanted to mention this to explain why this isn’t under the “builds” category.</description><content>&lt;p>I’ve been interested in building a self-navigating robot for a while from hobby electronics. The problem was that I tried adding to the complexity by taking too many variables into account. I tried multiple differential drive kits only to realize some tiny part about it wouldn’t make it feasible to use. I will revisit these issues in a build I’ve been working on for a while, but wanted to mention this to explain why this isn’t under the “builds” category. The Redbot Extreme was almost okay but it wasn’t Akerman.&lt;/p>
 &lt;p>Learning from earlier mistakes, I wasn’t going to make another one by trying to build a RC car with Ackerman steering from the ground up. I remember watching &lt;a href="https://www.youtube.com/watch?v=tOj53RRgtmg">a video by Hackaday&lt;/a> where they mentioned the Donkeycar, so I thought I’d give it a try.&lt;/p>
 &lt;p>The build is very straightforward, but sourcing the base is not. This build was going to be as hassle free as possible to I sourced whatever &lt;a href="https://squareup.com/store/donkeycar">donkeycar sold&lt;/a> on their site but couldn’t find the recommended RC car in stock. Newegg let me order one but the supplier immediately cancelled the order. So I went for the Exceed Desert Monster build, which offers its own set of advantages.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/pw/AL9nZEWle07yx-cZZR9Hzo2MQCzz5jEA2K5C7j7gnUvUsZ6bv91AuqQ97H0WENBXze7bD6iDe_c_18K5U3k8tnnLptkEtGh_VinbRb9sjpjOJ_EnCleh13LOv03mEMLyLAd9Z2-4Cox_tQn6Ycld4Qt0icTaJA=w1056-h1408-no" alt="Battery Comparison">
+&lt;figcaption>The recommended LiPo battery is almost as big as the NiMH battery the RC car comes with&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;!-- raw HTML omitted --></content></item><item><title>The AWS DeepLens Experience</title><link>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</link><pubDate>Tue, 26 Jun 2018 06:33:27 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</guid><description>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.</description><content>&lt;p>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.&lt;/p>
 &lt;h2 id="first-impressions">First Impressions&lt;/h2>
 &lt;p>When the DeepLens first arrived, I was surprised to see how big it was. I’d expected it to be smaller, I guess? The Intel Inside badge is what separates this thing from other common developer devices. The device is pretty light and uses a 5V 4A power supply.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h3 id="tech-specs">Tech Specs&lt;/h3>
 &lt;p>This thing has a Dual Core Intel Atom E3930, 8GB RAM and 16GB in-built memory. Compared to the UP Core, it’s two cores lesser but 3 Quarters newer, so it had a bunch of standardized security stuff. A pretty powerful OOTB dev tool if you ask me.&lt;/p>
 &lt;!-- raw HTML omitted -->
 &lt;h3 id="io">I/O&lt;/h3>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;p>The DeepLens has a ton of I/O that you can make use of. It has a micro SD card slot, a micro HDMI, an audio line out and two very misleading USB2.0 ports that are blue like USB3.0. A quick &lt;code>lsusb&lt;/code> shows that the device is capable of USB3.0, but the camera and the USB ports on the back are on the USB2.0 bus. The AWS component of this device makes it easy to use without a monitor, but I’d recommend a micro HDMI adapter for this.&lt;/p>
 &lt;h3 id="software">Software&lt;/h3>
 &lt;p>Onto the bigger questions. How locked is it? When setting it up, I thought I followed the instructions wrong (or forgot the password I assigned to it) and lost access to the device. I quickly looked up recovery methods and found &lt;a href="https://s3.amazonaws.com/deeplens-public/factory-restore/DeepLens_System_Restore_Instruction.pdf">this&lt;/a>, which asks the user to make a bootable Ubuntu 16.04 flash drive along with an SD card with AWS stuff. Looking at that made me realize this isn’t really locked much. This is a full x86 computer with a good camera. You could use the device without the AWS component but I think you’d lose access to the camera.&lt;/p>
@@ -58,20 +68,28 @@ cd intel64/Release
 &lt;p>Remove the battery pack included in the kit. Then put the battery in the center, making sure it doesn’t push your hall effect sensors away from the magnets on the motor shafts. This is a very powerful battery so be very careful with it(I learnt it the hard way by accidentally shorting wires, I’m surprised I didn’t burn the house down). Take the included velcro strap and instead of wrapping it around the battery, cut off the ends and stick one side to the bot and the other side to the battery. This should make sure the battery doesn’t hit the encoders.&lt;/p>
 &lt;p>Disclaimer: You will lose the capability of stuffing a servo in the servo slot. Sparkfun mentioned building a robot arm on this thing, but I won’t be doing that ever on this robot so it’s fine I guess.&lt;/p>
 &lt;p>Don’t attach the top stage yet.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124232.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124232.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h4 id="fasten-raspberry-pi-camera-and-sensors">Fasten Raspberry Pi Camera and sensors&lt;/h4>
 &lt;p>Attach the Raspberry Pi camera on to the 3D printed front strut. You won’t get to access this easily once assembled so make sure your connections are good.&lt;/p>
 &lt;p>Now would be a good time to screw the sensors onto the 3D printed side struts as well. Also wire the proximity sensors and push them through the hole under the RedBot board, so you don’t have to struggle to push them through tight spaces after the battery is in. The wires should be long enough.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124611.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124611.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h4 id="attach-the-struts">Attach the struts&lt;/h4>
 &lt;p>I found an existing design on Thingiverse for struts with holes for a ToF sensor (which was in turn supposed to be a drop-in replacement for the Sharp IR sensor) so I got those printed and decided to modify the part for a Raspberry Pi camera.&lt;/p>
 &lt;p>Pretty straightforward, attach the struts to the bottom base first. Begin with the camera strut in the front center, and then add the four sensors on the corners and, if you want, you can add a fifth proximity sensor in the back (if you don’t mind charging the battery when it is in the chassis, since the sensor at the back blocks the battery).&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;p>If you want to go beyond this step, I don’t think you should attach the top portion yet. Otherwise, you can attach it right now, making sure the LiPo battery terminals stick out the back end.&lt;/p>
 &lt;h4 id="make-mounting-holes-and-connect-raspberry-pi">Make Mounting holes and connect Raspberry Pi&lt;/h4>
 &lt;p>Pretty straightforward here too. Place your pi on the top part of the chassis, mark the holes and drill, I used a Dremel. Also make mounting holes on the side for the regulator. You can technically drill a hole after assembling the top part, but there’s a very high chance of puncturing the battery and causing an explosion. Don’t be stupid. Don’t do that. Please. I know it’s tempting.&lt;/p>
 &lt;p>Screw on some Nylon spacers and then the Raspberry Pi on top of that (I used spacers long enough to stick a Neural Compute Stick in the side without hitting the wheels, but that’s pointless, as you’ll soon realize).&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h4 id="check-connections-snap-together-drive-around">Check connections, snap together, drive around&lt;/h4>
 &lt;p>Check if you connected everything and then attach the top part of the RedBot. I used the Raspberry Pi 3 B+ not to look fancy but because many complex-er libraries aren’t compatible with it yet, but the &lt;a href="https://elinux.org/RPi-Cam-Web-Interface">RPi-Cam-Web-Interface&lt;/a> works, and it’s fun when you drive around with it. I had the ZigBee module on the Redbot and a controller from earlier, so that’s how it’s being driven around. I don’t think it’d be straightforward to have ZigBee comms coexist with serial communications with the Raspberry Pi, so don’t try adding a ZigBee module if you have no use for it.&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -143,7 +161,9 @@ SSH into the pi again, but with the new hostname this time&lt;/p>
 &lt;h3 id="build">Build&lt;/h3>
 &lt;h4 id="power-and-motor-drivers">Power and Motor Drivers&lt;/h4>
 &lt;p>Since it had two sections and the motors ran on 12V, I wanted to dedicate the first level for the motor drivers and a good battery, and I didn’t want to put a step-up to power motors. I ordered a few 11.1V LiPo batteries and decided to use two extra L298N motor drivers I had from a hydroponics controller project. The motor drivers and the battery fit perfectly in the lower level.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131007-e1525301525382-1024x768.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131007-e1525301525382-1024x768.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h4 id="microcontroller-circuit">Microcontroller Circuit&lt;/h4>
 &lt;p>Looking at all the room I had on the top, I wanted to keep this as wire-clean as possible. The three motors needed 6 PWM capable pins (2 each) to drive, and 6 (preferably) interrupt capable pins for encoders. This rules out almost all AVR Arduino boards with a small footprint. This also rules out being able to add enough sensors to the microcontroller. For awesome compatibility, as usual, I decided to go for an Adafruit Feather board. I didn’t want a feather with an extra chip on-board for wireless (WiFi or BLE), I wanted to try out the new ESP32 instead. What’s more interesting is that the chip also supports rosserial, making it swappable with other Huzzah boards. ESP32 guzzles too much power? For what I had in mind for this project, it doesn’t really amount to that much. Plus, if you want to make the robot without the UP Core, the onboard 5v regulators on the L298N drivers should be more than enough to power the microcontroller.&lt;/p>
 &lt;p>The ARM M0+, Teensy and ESP32 feather boards have all interrupt capable pins.&lt;/p>
@@ -164,7 +184,9 @@ SSH into the pi again, but with the new hostname this time&lt;/p>
 &lt;h4 id="camera-mount">Camera Mount&lt;/h4>
 &lt;p>I decided to 3D print the mount so I don’t accidentally damage the camera by trying out weird brackets lying around. I came up with a &lt;a href="https://www.thingiverse.com/thing:2864087">simple design&lt;/a> to mount it on the corner of the robot. The three holes on the robot are parts of the longer slit on the chassis rather than screw holes, it just needs to be securely tightly to avoid slipping. I removed material between screws on the camera to show off the Realsense logo (Represent).&lt;/p>
 &lt;p>At this point I decided to check if the circuit was working properly, and realized two of the three motor encoders weren’t working. One of them had a missing capacitor that broke the circuit, and I can’t solder such small SMT components. I emailed RobotShop and they contacted the manufacturer to send me replacement parts. We don’t need the encoders for a while till the entire build is complete, so let’s work on setting up the software instead.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131530.jpg?resize=768%2C1024&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131530.jpg?resize=768%2C1024&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h3 id="setting-up-the-software">Setting up the software&lt;/h3>
 &lt;h4 id="setting-up-orb-slam2">Setting up ORB-SLAM2&lt;/h4>
 &lt;p>ORB-SLAM2 was one of the first SLAM libraries that I heard of. I decided to go with this. The software setup is pretty straightforward. Follow the instructions on the &lt;a href="https://github.com/raulmur/ORB_SLAM2">Github page&lt;/a>. Setup the prerequisites as mentioned in the page carefully making sure all of them are installed properly. Before running the final &lt;code>./build.sh&lt;/code> script, we need to make a very tiny change. The UP Core might not &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/242">run out of memory during the build&lt;/a>. Mine kept getting stuck at 59% before it said virtual memory ran out. Open the &lt;code>build.sh&lt;/code> file and changed the last line from&lt;/p>
@@ -238,7 +260,9 @@ do_rectify: False
 &lt;h3 id="assemble">Assemble&lt;/h3>
 &lt;p>To my surprise the earlier design technique worked and the motors directly snap fit into the 35% version. I was so excited by my first snap fit mechanism that I took a picture.&lt;/p>
 &lt;p>This is the earliest one I have.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20170401_145912-220x300.jpg?resize=220%2C300" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20170401_145912-220x300.jpg?resize=220%2C300" alt="">
+&lt;/p>
 &lt;p>This was my first experience with the &lt;a href="https://www.adafruit.com/feather">Adafruit Feather&lt;/a> line of products. Little did I know that I’d fall in love with them so much. You can clearly see in the picture that the battery is too big.&lt;/p>
 &lt;p>Everything assembled like I imagined. The board fit snugly and the battery didn’t fall off easily. After assembling everything and holding it in my hand, I knew this wouldn’t work. Those toy car wheels couldn’t control the weight of the thing.&lt;/p>
 &lt;p>At this point I was prepared for the worst, there could be a random short or the battery could just puff up, I wouldn’t care. I was very happy I got back to DIY-learning after coming to the US with close to no tools to begin with.&lt;/p>

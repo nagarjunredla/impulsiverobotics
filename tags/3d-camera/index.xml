@@ -13,7 +13,9 @@
 &lt;h3 id="build">Build&lt;/h3>
 &lt;h4 id="power-and-motor-drivers">Power and Motor Drivers&lt;/h4>
 &lt;p>Since it had two sections and the motors ran on 12V, I wanted to dedicate the first level for the motor drivers and a good battery, and I didn’t want to put a step-up to power motors. I ordered a few 11.1V LiPo batteries and decided to use two extra L298N motor drivers I had from a hydroponics controller project. The motor drivers and the battery fit perfectly in the lower level.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131007-e1525301525382-1024x768.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131007-e1525301525382-1024x768.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h4 id="microcontroller-circuit">Microcontroller Circuit&lt;/h4>
 &lt;p>Looking at all the room I had on the top, I wanted to keep this as wire-clean as possible. The three motors needed 6 PWM capable pins (2 each) to drive, and 6 (preferably) interrupt capable pins for encoders. This rules out almost all AVR Arduino boards with a small footprint. This also rules out being able to add enough sensors to the microcontroller. For awesome compatibility, as usual, I decided to go for an Adafruit Feather board. I didn’t want a feather with an extra chip on-board for wireless (WiFi or BLE), I wanted to try out the new ESP32 instead. What’s more interesting is that the chip also supports rosserial, making it swappable with other Huzzah boards. ESP32 guzzles too much power? For what I had in mind for this project, it doesn’t really amount to that much. Plus, if you want to make the robot without the UP Core, the onboard 5v regulators on the L298N drivers should be more than enough to power the microcontroller.&lt;/p>
 &lt;p>The ARM M0+, Teensy and ESP32 feather boards have all interrupt capable pins.&lt;/p>
@@ -34,7 +36,9 @@
 &lt;h4 id="camera-mount">Camera Mount&lt;/h4>
 &lt;p>I decided to 3D print the mount so I don’t accidentally damage the camera by trying out weird brackets lying around. I came up with a &lt;a href="https://www.thingiverse.com/thing:2864087">simple design&lt;/a> to mount it on the corner of the robot. The three holes on the robot are parts of the longer slit on the chassis rather than screw holes, it just needs to be securely tightly to avoid slipping. I removed material between screws on the camera to show off the Realsense logo (Represent).&lt;/p>
 &lt;p>At this point I decided to check if the circuit was working properly, and realized two of the three motor encoders weren’t working. One of them had a missing capacitor that broke the circuit, and I can’t solder such small SMT components. I emailed RobotShop and they contacted the manufacturer to send me replacement parts. We don’t need the encoders for a while till the entire build is complete, so let’s work on setting up the software instead.&lt;/p>
-&lt;p>&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131530.jpg?resize=768%2C1024&amp;amp;ssl=1" alt="">&lt;/p>
+&lt;p>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180502_131530.jpg?resize=768%2C1024&amp;amp;ssl=1" alt="">
+&lt;/p>
 &lt;h3 id="setting-up-the-software">Setting up the software&lt;/h3>
 &lt;h4 id="setting-up-orb-slam2">Setting up ORB-SLAM2&lt;/h4>
 &lt;p>ORB-SLAM2 was one of the first SLAM libraries that I heard of. I decided to go with this. The software setup is pretty straightforward. Follow the instructions on the &lt;a href="https://github.com/raulmur/ORB_SLAM2">Github page&lt;/a>. Setup the prerequisites as mentioned in the page carefully making sure all of them are installed properly. Before running the final &lt;code>./build.sh&lt;/code> script, we need to make a very tiny change. The UP Core might not &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/242">run out of memory during the build&lt;/a>. Mine kept getting stuck at 59% before it said virtual memory ran out. Open the &lt;code>build.sh&lt;/code> file and changed the last line from&lt;/p>
