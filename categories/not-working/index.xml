@@ -20,9 +20,26 @@
 &lt;h3 id="connections">Connections&lt;/h3>
 &lt;p>The connections are pretty straightforward. The MPU-9250 is connected to the micro controller via I2C and the motor driver via PWM. If you’ve noticed that the motors run on 6v and that the maximum battery output is 4.2v, you’ve already started realizing why this might fail. I decided to go for it anyway. The website said the motors would still move at voltages as low as 3v but with lower torque, seemed fair enough.&lt;/p>
 &lt;p>I don’t have many photos of the making process, so I tried using Fritzing to make it simpler. I’m new to Fritzing and I hope it’s understandable.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-6.08.10-PM.png?resize=1024%2C659&amp;amp;ssl=1" alt="Fritzing Circuit">
+&lt;figcaption>Fritzing Breadboard Circuit. Sensor stick: MPU 9250, Micro Metal Gearmotor: Sub Micro Plastic Gearmotor&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180408_180542.jpg?resize=128%2C300&amp;amp;ssl=1" alt="Circuit back">
+&lt;figcaption>&amp;#39;Art.&amp;#39;&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="design">Design&lt;/h3>
 &lt;p>This clearly needs a base/chassis, so I decided to 3D print it, why not? The only problem is that I never worked on CAD software. I searched for the best CAD software for dummies and found 123D Design. I literally made cylinder holes in a cuboid for the motors and made two versions: one with 35% of the cuboid cut off from the bottom and the other 40%.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-5.17.42-PM.png?resize=1024%2C534&amp;amp;ssl=1" alt="design">
+&lt;figcaption>123D Design in various stages&lt;/figcaption>
+&lt;/figure>
+I don’t intend to put the design up on Thingiverse. If you still want it, &lt;a href="https://impulsiverobotics.com/wp-content/uploads/2018/04/piddytry.zip">you can have it&lt;/a>.&lt;/p>
 &lt;h3 id="assemble">Assemble&lt;/h3>
 &lt;p>To my surprise the earlier design technique worked and the motors directly snap fit into the 35% version. I was so excited by my first snap fit mechanism that I took a picture.&lt;/p>
 &lt;p>This is the earliest one I have.&lt;/p>

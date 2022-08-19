@@ -37,18 +37,24 @@
 &lt;p>I found an existing design on Thingiverse for struts with holes for a ToF sensor (which was in turn supposed to be a drop-in replacement for the Sharp IR sensor) so I got those printed and decided to modify the part for a Raspberry Pi camera.&lt;/p>
 &lt;p>Pretty straightforward, attach the struts to the bottom base first. Begin with the camera strut in the front center, and then add the four sensors on the corners and, if you want, you can add a fifth proximity sensor in the back (if you don’t mind charging the battery when it is in the chassis, since the sensor at the back blocks the battery).&lt;/p>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="without the top on">
 &lt;/p>
 &lt;p>If you want to go beyond this step, I don’t think you should attach the top portion yet. Otherwise, you can attach it right now, making sure the LiPo battery terminals stick out the back end.&lt;/p>
 &lt;h4 id="make-mounting-holes-and-connect-raspberry-pi">Make Mounting holes and connect Raspberry Pi&lt;/h4>
 &lt;p>Pretty straightforward here too. Place your pi on the top part of the chassis, mark the holes and drill, I used a Dremel. Also make mounting holes on the side for the regulator. You can technically drill a hole after assembling the top part, but there’s a very high chance of puncturing the battery and causing an explosion. Don’t be stupid. Don’t do that. Please. I know it’s tempting.&lt;/p>
 &lt;p>Screw on some Nylon spacers and then the Raspberry Pi on top of that (I used spacers long enough to stick a Neural Compute Stick in the side without hitting the wheels, but that’s pointless, as you’ll soon realize).&lt;/p>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="closeup">
 &lt;/p>
 &lt;h4 id="check-connections-snap-together-drive-around">Check connections, snap together, drive around&lt;/h4>
 &lt;p>Check if you connected everything and then attach the top part of the RedBot. I used the Raspberry Pi 3 B+ not to look fancy but because many complex-er libraries aren’t compatible with it yet, but the &lt;a href="https://elinux.org/RPi-Cam-Web-Interface">RPi-Cam-Web-Interface&lt;/a> works, and it’s fun when you drive around with it. I had the ZigBee module on the Redbot and a controller from earlier, so that’s how it’s being driven around. I don’t think it’d be straightforward to have ZigBee comms coexist with serial communications with the Raspberry Pi, so don’t try adding a ZigBee module if you have no use for it.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/ezgif-1-b9451edde9.gif?resize=600%2C338&amp;amp;ssl=1" alt="POV cam gif">
+&lt;figcaption>A gif of a video of a video.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>(On a side note, the text on the top looks familiar from a &lt;a href="https://youtu.be/sUfqmjM9_VE?t=4m">TechCrunch Disrupt video&lt;/a>.. and this web interface only works with the Raspberry Pi Camera Module. hmm..)&lt;/p>
 &lt;h3 id="conclusions">Conclusions&lt;/h3>
 &lt;p>If I had such sturdy proximity sensors when taking the Coursera course, it would’ve helped a lot. The simple single phase hall effect sensor based encoders kept me from overhauling the robot thinking it would be pointless. Quadrature encoders would’ve been sweet. After adding the camera, I realized it was pointless trying to extract a lot of info from a POV that was so low, so point in adding a Neural Compute stick or trying to piggyback a Google Vision kit on the RedBot: it’s just way too low for object recognition (or to just fit an entire object in its frame)&lt;/p>
 &lt;p>Want to take it further? Only sensible thing without going over the top would be to connect via I2C or USB. I was talking to a friend about this robot and he suggested we implement a machine learning algorithm on the robot. Since the algorithm’s output only needs to be throttle values for the two motors, we don’t really need the encoders. I was interested and saw a &lt;a href="https://www.youtube.com/watch?v=WtEYMELvRHI">similar project video on Youtube&lt;/a> for obstacle avoidance. Both of us have finals soon, so more on that after.&lt;/p></content></item><item><title>ROS enabled omnidirectional robot</title><link>https://www.impulsiverobotics.com/posts/2018-04-16-ros-enabled-omnidirectional-robot/</link><pubDate>Mon, 16 Apr 2018 07:47:36 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-04-16-ros-enabled-omnidirectional-robot/</guid><description>This was a project that incrementally grew to become one of the more complex robots I’ve ever built. I was interested in checking out how omni wheels work after I saw a video of a robot made by a high school friend’s startup that paints walls. I had no idea on how to control a robot with omni wheels. A quick google search later I realized they looked real cool and I decided to build one.</description><content>&lt;p>This was a project that incrementally grew to become one of the more complex robots I’ve ever built. I was interested in checking out how &lt;a href="https://en.wikipedia.org/wiki/Omni_wheel">omni wheels&lt;/a> work after I saw a video of a robot made by a high school friend’s startup that paints walls. I had no idea on how to control a robot with omni wheels. A quick google search later I realized they looked real cool and I decided to build one.&lt;/p>
@@ -72,8 +78,8 @@
 &lt;h4 id="microcontroller-circuit">Microcontroller Circuit&lt;/h4>
 &lt;p>Looking at all the room I had on the top, I wanted to keep this as wire-clean as possible. The three motors needed 6 PWM capable pins (2 each) to drive, and 6 (preferably) interrupt capable pins for encoders. This rules out almost all AVR Arduino boards with a small footprint. This also rules out being able to add enough sensors to the microcontroller. For awesome compatibility, as usual, I decided to go for an Adafruit Feather board. I didn’t want a feather with an extra chip on-board for wireless (WiFi or BLE), I wanted to try out the new ESP32 instead. What’s more interesting is that the chip also supports rosserial, making it swappable with other Huzzah boards. ESP32 guzzles too much power? For what I had in mind for this project, it doesn’t really amount to that much. Plus, if you want to make the robot without the UP Core, the onboard 5v regulators on the L298N drivers should be more than enough to power the microcontroller.&lt;/p>
 &lt;p>The ARM M0+, Teensy and ESP32 feather boards have all interrupt capable pins.&lt;/p>
-&lt;p>&lt;!-- raw HTML omitted -->&lt;em>TODO : Solder I2C Female Header Pins for IMU&lt;/em>&lt;!-- raw HTML omitted --> Not required, yet.&lt;/p>
-&lt;p>&lt;!-- raw HTML omitted -->&lt;em>TODO : &lt;a href="https://forums.adafruit.com/viewtopic.php?f=24&amp;amp;t=112430&amp;amp;p=562071&amp;amp;hilit=diode+usb+power">Solder diode to protect USB from external power&lt;/a>&lt;/em>&lt;!-- raw HTML omitted --> – Done&lt;/p>
+&lt;p>&lt;del>&lt;em>TODO : Solder I2C Female Header Pins for IMU&lt;/em>&lt;/del> Not required, yet.&lt;/p>
+&lt;p>&lt;del>&lt;em>TODO : &lt;a href="https://forums.adafruit.com/viewtopic.php?f=24&amp;amp;t=112430&amp;amp;p=562071&amp;amp;hilit=diode+usb+power">Solder diode to protect USB from external power&lt;/a>&lt;/em>&lt;/del> – Done&lt;/p>
 &lt;p>&lt;em>TODO : Add Step Down Regulator to power UP Core&lt;/em>&lt;/p>
 &lt;h4 id="computer-mount">Computer Mount&lt;/h4>
 &lt;p>After I thought of the possibility of using the realsense camera, I began thinking of how to mount the UP Board AND the microcontroller on the same plane (along with the camera). More than the space, I was worried about the connection to the camera. The UP Board has a USB 3.0 OTG port, which needs an adapter before connecting to the USB cable to the camera. I had troubles with the R200 before, and I didn’t want to take any chances. While I was thinking about this, I found that the UP core had released. While I was contemplating spending on the UP Core, the UP Board team decided to put a sticky banner on their homepage with a countdown announcing AI on the edge. I was very excited about it and decided to wait it out instead of buying the UP Core. After the countdown, I realized it was just a pre-order launch of a PCIe card for the Movidius 2 chip and an announcement of a really cool UP Core Plus board (with actual photos of expansion boards) which I can’t buy right now anyway.&lt;/p>
@@ -95,46 +101,57 @@
 &lt;h3 id="setting-up-the-software">Setting up the software&lt;/h3>
 &lt;h4 id="setting-up-orb-slam2">Setting up ORB-SLAM2&lt;/h4>
 &lt;p>ORB-SLAM2 was one of the first SLAM libraries that I heard of. I decided to go with this. The software setup is pretty straightforward. Follow the instructions on the &lt;a href="https://github.com/raulmur/ORB_SLAM2">Github page&lt;/a>. Setup the prerequisites as mentioned in the page carefully making sure all of them are installed properly. Before running the final &lt;code>./build.sh&lt;/code> script, we need to make a very tiny change. The UP Core might not &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/242">run out of memory during the build&lt;/a>. Mine kept getting stuck at 59% before it said virtual memory ran out. Open the &lt;code>build.sh&lt;/code> file and changed the last line from&lt;/p>
-&lt;pre tabindex="0">&lt;code>make -j
-&lt;/code>&lt;/pre>&lt;p>to&lt;/p>
-&lt;pre tabindex="0">&lt;code>make -j1
-&lt;/code>&lt;/pre>&lt;p>you could try sensible higher numbers, I haven’t tried it though. I took help from a &lt;a href="https://medium.com/@j.zijlmans/orb-slam-2052515bd84c">medium article&lt;/a> and tried working on the TU-Munich dataset. Everything worked fine but the viewer kept freezing at the end. There were a few open issues mentioning that &lt;!-- raw HTML omitted --> and I don’t think it’s something that affects the core software I thought I’d go ahead with ROS&lt;!-- raw HTML omitted --> &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/547">and turns out you need to install an older version of Pangolin&lt;/a>.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>make -j
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>to&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>make -j1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>you could try sensible higher numbers, I haven’t tried it though. I took help from a &lt;a href="https://medium.com/@j.zijlmans/orb-slam-2052515bd84c">medium article&lt;/a> and tried working on the TU-Munich dataset. Everything worked fine but the viewer kept freezing at the end. There were a few open issues mentioning that &lt;del> and I don’t think it’s something that affects the core software I thought I’d go ahead with ROS&lt;/del> &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/547">and turns out you need to install an older version of Pangolin&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/ezgif-4-be7aa06151.gif?resize=600%2C338&amp;amp;ssl=1" alt="ORB-SLAM2 gif">
+&lt;figcaption>ORB-SLAM2 working on the TUM1 dataset. Another gif, sorry.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h4 id="getting-camera-parameters">Getting Camera Parameters&lt;/h4>
 &lt;p>So the Intel D400 cameras come with factory loaded parameters, and they’re published on a topic in the realsense ROS node. We can get those parameters by running &lt;code>rostopic echo /camera/color/camera_info&lt;/code>, This is what the output looks like&lt;/p>
-&lt;pre tabindex="0">&lt;code>header:
-seq: 47
-stamp:
-secs: 1529978641
-nsecs: 358682339
-frame_id: &amp;#34;camera_color_optical_frame&amp;#34;
-height: 480
-width: 640
-distortion_model: &amp;#34;plumb_bob&amp;#34;
-D: [0.0, 0.0, 0.0, 0.0, 0.0]
-K: [616.7030029296875, 0.0, 300.7779235839844, 0.0, 616.4176025390625, 234.95497131347656, 0.0, 0.0, 1.0]
-R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
-P: [616.7030029296875, 0.0, 300.7779235839844, 0.0, 0.0, 616.4176025390625, 234.95497131347656, 0.0, 0.0, 0.0, 1.0, 0.0]
-binning_x: 0
-binning_y: 0
-roi:
-x_offset: 0
-y_offset: 0
-height: 0
-width: 0
-do_rectify: False
----
-&lt;/code>&lt;/pre>&lt;p>The parameters published in the camera ROS topic gives us the values for fx, fy, cx, cy from K, and k1, k2, p1, p2, k3 from D (&lt;a href="https://github.com/IntelRealSense/librealsense/blob/165ae36b350ca950e4180dd6ca03ca6347bc6367/third-party/realsense-file/rosbag/msgs/sensor_msgs/CameraInfo.h#L268">more info&lt;/a>). From the &lt;a href="https://www.intel.com/content/dam/support/us/en/documents/emerging-technologies/intel-realsense-technology/Intel-RealSense-D400-Series-Datasheet.pdf">datasheet&lt;/a>, we get the baseline to be 55mm for D415 and 50mm for D435. The value for bf is &lt;code>bf = baseline (in meters) * fx&lt;/code>. This is the YAML file I used for D415&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">header&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">seq&lt;/span>: &lt;span style="color:#ae81ff">47&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">stamp&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">secs&lt;/span>: &lt;span style="color:#ae81ff">1529978641&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">nsecs&lt;/span>: &lt;span style="color:#ae81ff">358682339&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">frame_id&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;camera_color_optical_frame&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">height&lt;/span>: &lt;span style="color:#ae81ff">480&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">width&lt;/span>: &lt;span style="color:#ae81ff">640&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">distortion_model&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;plumb_bob&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">D&lt;/span>: [&lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">K&lt;/span>: [&lt;span style="color:#ae81ff">616.7030029296875&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">300.7779235839844&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">616.4176025390625&lt;/span>, &lt;span style="color:#ae81ff">234.95497131347656&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">R&lt;/span>: [&lt;span style="color:#ae81ff">1.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">P&lt;/span>: [&lt;span style="color:#ae81ff">616.7030029296875&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">300.7779235839844&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">616.4176025390625&lt;/span>, &lt;span style="color:#ae81ff">234.95497131347656&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">binning_x&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">binning_y&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">roi&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">x_offset&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">y_offset&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">height&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">width&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">do_rectify&lt;/span>: &lt;span style="color:#66d9ef">False&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The parameters published in the camera ROS topic gives us the values for fx, fy, cx, cy from K, and k1, k2, p1, p2, k3 from D (&lt;a href="https://github.com/IntelRealSense/librealsense/blob/165ae36b350ca950e4180dd6ca03ca6347bc6367/third-party/realsense-file/rosbag/msgs/sensor_msgs/CameraInfo.h#L268">more info&lt;/a>). From the &lt;a href="https://www.intel.com/content/dam/support/us/en/documents/emerging-technologies/intel-realsense-technology/Intel-RealSense-D400-Series-Datasheet.pdf">datasheet&lt;/a>, we get the baseline to be 55mm for D415 and 50mm for D435. The value for bf is &lt;code>bf = baseline (in meters) * fx&lt;/code>. This is the YAML file I used for D415&lt;/p>
+&lt;script src="https://gist.github.com/nagarjunredla/8e5e33db93d06c1bd0ebdcd57e093294.js">&lt;/script>
 &lt;h4 id="setting-up-ros-node">Setting up ROS node&lt;/h4>
 &lt;p>Since the realsense node publishes camera data on &lt;code>/camera/color/image_raw&lt;/code> and depth data on &lt;code>/camera/depth/image_rect_raw&lt;/code> we need to change it to these links in &lt;code>~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_rgbd.cc&lt;/code>. After that make sure you have ROS_PACKAGE_PATH pointed to the right directory of ORB_SLAM2 and run &lt;code>./build_ros.sh&lt;/code>&lt;/p>
 &lt;h4 id="running-the-nodes">Running the nodes&lt;/h4>
 &lt;p>In one terminal, start &lt;code>roscore&lt;/code>. In another terminal, source the environment variables of ORB SLAM2&lt;/p>
-&lt;pre tabindex="0">&lt;code>source ~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
-&lt;/code>&lt;/pre>&lt;p>and then run the node with&lt;/p>
-&lt;pre tabindex="0">&lt;code>rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
-&lt;/code>&lt;/pre>&lt;p>Once the ORB SLAM node is running, open a third terminal window and run the Intel Realsense node. The output should look like this&lt;/p>
-&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>source ~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and then run the node with&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once the ORB SLAM node is running, open a third terminal window and run the Intel Realsense node. The output should look like this&lt;/p>
+&lt;p>&lt;span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe allowfullscreen="true" class="youtube-player" height="360" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" src="https://www.youtube.com/embed/yl6MgnYNDE8?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" style="border:0;" width="640">&lt;/iframe>&lt;/span>&lt;/p>
 &lt;p>As you can see, ORB SLAM initializes immediately and rarely loses tracking. I tried using Monocular version with footage from my Ryze Tello, but it took a while to initialize and kept losing track. The RGB-D version looks much more reliable. I was surprised to see that the UP Core handled it well.&lt;/p>
 &lt;p>I wanted to evaluate ORB-SLAM2 with an RGBD camera only because my monocular tests were failing because of calibration problems or poor image quality. To be fair I tried it on the Ryze (DJI?) Tello. I got some buggy results:&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/tello_slam_gif.gif?resize=600%2C290&amp;amp;ssl=1" alt="Tello SLAM gif">
+&lt;figcaption>kept losing track often&lt;/figcaption>
+&lt;/figure>
+Next step would be to try RTAB-Map. It’s catkinized and has a better dev community.&lt;/p>
 &lt;p>Since the robot is built and and it’s compute capability is validated, next steps are to write Arduino code for the HUZZAH32 board. The kit came with faulty wheel encoders and even though Robotshop sent me replacements for two motors, one of them was still faulty. So now I have 5 motors with 2 functioning wheel encoders.&lt;/p></content></item></channel></rss>

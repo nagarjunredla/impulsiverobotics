@@ -3,22 +3,39 @@
 &lt;p>The build is very straightforward, but sourcing the base is not. This build was going to be as hassle free as possible to I sourced whatever &lt;a href="https://squareup.com/store/donkeycar">donkeycar sold&lt;/a> on their site but couldn’t find the recommended RC car in stock. Newegg let me order one but the supplier immediately cancelled the order. So I went for the Exceed Desert Monster build, which offers its own set of advantages.&lt;/p>
 &lt;p>
 &lt;figure>
-&lt;img src="https://lh3.googleusercontent.com/pw/AL9nZEWle07yx-cZZR9Hzo2MQCzz5jEA2K5C7j7gnUvUsZ6bv91AuqQ97H0WENBXze7bD6iDe_c_18K5U3k8tnnLptkEtGh_VinbRb9sjpjOJ_EnCleh13LOv03mEMLyLAd9Z2-4Cox_tQn6Ycld4Qt0icTaJA=w1056-h1408-no" alt="Battery Comparison">
+&lt;img src="https://lh3.googleusercontent.com/PMeWW_MHhFWXw67wQtGpBtn3z6VXUCTvR6jTF6QpPvJySm0qoebLWaORQNSuL8RvWFdlIr9PZNgseqBL1qsFF90T9nCVlCz6CRMxSR2GuLQf7OGFYj8fvcAlWuCMqc72WyJXpN_oBUc=w600" alt="Battery size comparison">
 &lt;figcaption>The recommended LiPo battery is almost as big as the NiMH battery the RC car comes with&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
-&lt;!-- raw HTML omitted --></content></item><item><title>The AWS DeepLens Experience</title><link>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</link><pubDate>Tue, 26 Jun 2018 06:33:27 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</guid><description>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.</description><content>&lt;p>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/qiImVGPlCUnbS_gmoBqvEriGmz4ZnTVyf4SXz17k0ujtvolCF8Z_WF1x5CKweS0ADYWMB4TGq2jDTHDUsruV1c_uwTQju8EaLRGMZzS6R73zD1SSjRnxI0iADbEu17oil9mmq1_z89g=w600" alt="LiPo battery assembly">
+&lt;figcaption>Butt first without squishing the axle’s gear. Or you could put it sideways and hope it doesn’t fall off&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/HfOtUR8mNdSz0zGVFPjSNLS419O2HMn5EFYH93gFZsqbLdG_4mb2ihNEjnDnnxUmmaNL_vx55xiL4HhyYrCIjUJ3v4LWoIvx2xaV9UvN5p_Aiq3AG9GTahRmbQcX5B6Nqoefz4qxCTo=w600" alt="LiPo battery secure">
+&lt;figcaption>Be careful not to squish the top too much, one of the terminals on my battery popped off.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/M_AbpYWtOr5Ip70sRBSl5KnRgyZPBzP8oNPzy74wHHC1DvbEGh1H2wk6cESzcn3ZkaRykdJArC1L1bK_zYpp0PTjK-9V9SpH-8lpRSB60jKP42nswZrXUK1WIVNE_ghX0IiR6QRLMLA=w600" alt="LiPo battery side view">
+&lt;figcaption>The velcro in the gaps on the chassis should hold the battery pack in place.&lt;/figcaption>
+&lt;/figure>
+&lt;/p></content></item><item><title>The AWS DeepLens Experience</title><link>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</link><pubDate>Tue, 26 Jun 2018 06:33:27 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</guid><description>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.</description><content>&lt;p>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.&lt;/p>
 &lt;h2 id="first-impressions">First Impressions&lt;/h2>
 &lt;p>When the DeepLens first arrived, I was surprised to see how big it was. I’d expected it to be smaller, I guess? The Intel Inside badge is what separates this thing from other common developer devices. The device is pretty light and uses a 5V 4A power supply.&lt;/p>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="Deeplens and some amazon boxes">
 &lt;/p>
 &lt;h3 id="tech-specs">Tech Specs&lt;/h3>
 &lt;p>This thing has a Dual Core Intel Atom E3930, 8GB RAM and 16GB in-built memory. Compared to the UP Core, it’s two cores lesser but 3 Quarters newer, so it had a bunch of standardized security stuff. A pretty powerful OOTB dev tool if you ask me.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;iframe allowfullscreen="" frameborder="0" height="281.25" scrolling="no" src="https://gfycat.com/ifr/goodnatureddefenselessbongo" width="500">&lt;/iframe>
 &lt;h3 id="io">I/O&lt;/h3>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&amp;amp;ssl=1" alt="Deeplens IO">
 &lt;/p>
 &lt;p>The DeepLens has a ton of I/O that you can make use of. It has a micro SD card slot, a micro HDMI, an audio line out and two very misleading USB2.0 ports that are blue like USB3.0. A quick &lt;code>lsusb&lt;/code> shows that the device is capable of USB3.0, but the camera and the USB ports on the back are on the USB2.0 bus. The AWS component of this device makes it easy to use without a monitor, but I’d recommend a micro HDMI adapter for this.&lt;/p>
 &lt;h3 id="software">Software&lt;/h3>
@@ -30,16 +47,22 @@
 &lt;h3 id="model-optimizer">Model Optimizer&lt;/h3>
 &lt;p>The Deep Learning Deployment Toolkit only includes the Model Optimizer for MXNet models, so that’s no good. I went ahead and installed OpenVINO directly. This includes Model Optimizer for Caffe and TensorFlow models.&lt;/p>
 &lt;p>Download the &lt;a href="https://software.intel.com/file/609199/download">Caffe GoogLeNet SSD model&lt;/a> provided by Intel and unzip it. Then run the model optimizer using&lt;/p>
-&lt;pre tabindex="0">&lt;code>python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo.py --input_model ~/Downloads/SSD_GoogleNetV2.caffemodel --input_proto ~/Downloads/SSD_GoogleNetV2_Deploy.prototxt --output_dir ~/Downloads/
-&lt;/code>&lt;/pre>&lt;p>This generates two IR (Intermediate Representation) files &lt;code>SSD_GoogleNetV2.xml&lt;/code> and &lt;code>SSD_GoogleNetV2.bin&lt;/code> in the Downloads folder.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo.py --input_model ~/Downloads/SSD_GoogleNetV2.caffemodel --input_proto ~/Downloads/SSD_GoogleNetV2_Deploy.prototxt --output_dir ~/Downloads/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This generates two IR (Intermediate Representation) files &lt;code>SSD_GoogleNetV2.xml&lt;/code> and &lt;code>SSD_GoogleNetV2.bin&lt;/code> in the Downloads folder.&lt;/p>
 &lt;h3 id="inference-engine">Inference Engine&lt;/h3>
 &lt;p>There are many samples included in the inference engine directory. I’ll try the object detection SSD sample. First, build the examples.&lt;/p>
-&lt;pre tabindex="0">&lt;code>cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples
-cmake .
-sudo make install
-cd intel64/Release
-&lt;/code>&lt;/pre>&lt;p>Now run the Object Detection Demo SSD Async using&lt;/p>
-&lt;pre tabindex="0">&lt;code>./object_detection_demo_ssd_async -i /opt/awscam/out/ch2_out.mjpeg -m ~/Downloads/SSD_GoogleNetV2.xml -d CPU
-&lt;/code>&lt;/pre>&lt;p>You should see a stream with predictions. The frame rate averages between 1 and 2 frames per second.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo make install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd intel64/Release
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now run the Object Detection Demo SSD Async using&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>./object_detection_demo_ssd_async -i /opt/awscam/out/ch2_out.mjpeg -m ~/Downloads/SSD_GoogleNetV2.xml -d CPU
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You should see a stream with predictions. The frame rate averages between 1 and 2 frames per second.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/screenshot.png?resize=1024%2C576&amp;amp;ssl=1" alt="SSD Inference example">
+&lt;figcaption>Inference Engine SSD Sample&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
 &lt;p>This is a very cool tool to have. I had trouble getting a screenshot of better fps performance, since performing any other task, like taking a screenshot, hangs the application for a few seconds. It is critically designed to handle the Inference Engine and AWS lambda and greengrass. I wouldn’t use it for timing critical applications, in such cases it’s better to offload inference to the Movidius NCS anyway. But to try out vision based deep learning at home, this is awesome. The toolkit currently under active development. The Python SDK was in preview when I got the DeepLens but it is now available in a newer release. Unlike my usual problem with running out of ports on SBCs, the DeepLens has a few free ports. Let’s see how I can integrate this into a project.&lt;/p></content></item></channel></rss>

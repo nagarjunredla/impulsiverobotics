@@ -3,22 +3,39 @@
 &lt;p>The build is very straightforward, but sourcing the base is not. This build was going to be as hassle free as possible to I sourced whatever &lt;a href="https://squareup.com/store/donkeycar">donkeycar sold&lt;/a> on their site but couldn’t find the recommended RC car in stock. Newegg let me order one but the supplier immediately cancelled the order. So I went for the Exceed Desert Monster build, which offers its own set of advantages.&lt;/p>
 &lt;p>
 &lt;figure>
-&lt;img src="https://lh3.googleusercontent.com/pw/AL9nZEWle07yx-cZZR9Hzo2MQCzz5jEA2K5C7j7gnUvUsZ6bv91AuqQ97H0WENBXze7bD6iDe_c_18K5U3k8tnnLptkEtGh_VinbRb9sjpjOJ_EnCleh13LOv03mEMLyLAd9Z2-4Cox_tQn6Ycld4Qt0icTaJA=w1056-h1408-no" alt="Battery Comparison">
+&lt;img src="https://lh3.googleusercontent.com/PMeWW_MHhFWXw67wQtGpBtn3z6VXUCTvR6jTF6QpPvJySm0qoebLWaORQNSuL8RvWFdlIr9PZNgseqBL1qsFF90T9nCVlCz6CRMxSR2GuLQf7OGFYj8fvcAlWuCMqc72WyJXpN_oBUc=w600" alt="Battery size comparison">
 &lt;figcaption>The recommended LiPo battery is almost as big as the NiMH battery the RC car comes with&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
-&lt;!-- raw HTML omitted --></content></item><item><title>The AWS DeepLens Experience</title><link>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</link><pubDate>Tue, 26 Jun 2018 06:33:27 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</guid><description>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.</description><content>&lt;p>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/qiImVGPlCUnbS_gmoBqvEriGmz4ZnTVyf4SXz17k0ujtvolCF8Z_WF1x5CKweS0ADYWMB4TGq2jDTHDUsruV1c_uwTQju8EaLRGMZzS6R73zD1SSjRnxI0iADbEu17oil9mmq1_z89g=w600" alt="LiPo battery assembly">
+&lt;figcaption>Butt first without squishing the axle’s gear. Or you could put it sideways and hope it doesn’t fall off&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/HfOtUR8mNdSz0zGVFPjSNLS419O2HMn5EFYH93gFZsqbLdG_4mb2ihNEjnDnnxUmmaNL_vx55xiL4HhyYrCIjUJ3v4LWoIvx2xaV9UvN5p_Aiq3AG9GTahRmbQcX5B6Nqoefz4qxCTo=w600" alt="LiPo battery secure">
+&lt;figcaption>Be careful not to squish the top too much, one of the terminals on my battery popped off.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/M_AbpYWtOr5Ip70sRBSl5KnRgyZPBzP8oNPzy74wHHC1DvbEGh1H2wk6cESzcn3ZkaRykdJArC1L1bK_zYpp0PTjK-9V9SpH-8lpRSB60jKP42nswZrXUK1WIVNE_ghX0IiR6QRLMLA=w600" alt="LiPo battery side view">
+&lt;figcaption>The velcro in the gaps on the chassis should hold the battery pack in place.&lt;/figcaption>
+&lt;/figure>
+&lt;/p></content></item><item><title>The AWS DeepLens Experience</title><link>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</link><pubDate>Tue, 26 Jun 2018 06:33:27 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-06-26-the-aws-deeplens-experience/</guid><description>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.</description><content>&lt;p>I had a great time at Intel AI DevCon 2018. They gave out a few goodies which included an AWS DeepLens preorder code. To be honest, I didn’t really understand the point of it when I preordered it, but I did it anyway since it was free. I didn’t look at the specs till it arrived. I was expecting a device locked into using AWS apps. But boy was I wrong.&lt;/p>
 &lt;h2 id="first-impressions">First Impressions&lt;/h2>
 &lt;p>When the DeepLens first arrived, I was surprised to see how big it was. I’d expected it to be smaller, I guess? The Intel Inside badge is what separates this thing from other common developer devices. The device is pretty light and uses a 5V 4A power supply.&lt;/p>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170815.jpg?resize=1024%2C768&amp;amp;ssl=1" alt="Deeplens and some amazon boxes">
 &lt;/p>
 &lt;h3 id="tech-specs">Tech Specs&lt;/h3>
 &lt;p>This thing has a Dual Core Intel Atom E3930, 8GB RAM and 16GB in-built memory. Compared to the UP Core, it’s two cores lesser but 3 Quarters newer, so it had a bunch of standardized security stuff. A pretty powerful OOTB dev tool if you ask me.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;iframe allowfullscreen="" frameborder="0" height="281.25" scrolling="no" src="https://gfycat.com/ifr/goodnatureddefenselessbongo" width="500">&lt;/iframe>
 &lt;h3 id="io">I/O&lt;/h3>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/IMG_20180626_170959.jpg?resize=320%2C427&amp;amp;ssl=1" alt="Deeplens IO">
 &lt;/p>
 &lt;p>The DeepLens has a ton of I/O that you can make use of. It has a micro SD card slot, a micro HDMI, an audio line out and two very misleading USB2.0 ports that are blue like USB3.0. A quick &lt;code>lsusb&lt;/code> shows that the device is capable of USB3.0, but the camera and the USB ports on the back are on the USB2.0 bus. The AWS component of this device makes it easy to use without a monitor, but I’d recommend a micro HDMI adapter for this.&lt;/p>
 &lt;h3 id="software">Software&lt;/h3>
@@ -30,18 +47,24 @@
 &lt;h3 id="model-optimizer">Model Optimizer&lt;/h3>
 &lt;p>The Deep Learning Deployment Toolkit only includes the Model Optimizer for MXNet models, so that’s no good. I went ahead and installed OpenVINO directly. This includes Model Optimizer for Caffe and TensorFlow models.&lt;/p>
 &lt;p>Download the &lt;a href="https://software.intel.com/file/609199/download">Caffe GoogLeNet SSD model&lt;/a> provided by Intel and unzip it. Then run the model optimizer using&lt;/p>
-&lt;pre tabindex="0">&lt;code>python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo.py --input_model ~/Downloads/SSD_GoogleNetV2.caffemodel --input_proto ~/Downloads/SSD_GoogleNetV2_Deploy.prototxt --output_dir ~/Downloads/
-&lt;/code>&lt;/pre>&lt;p>This generates two IR (Intermediate Representation) files &lt;code>SSD_GoogleNetV2.xml&lt;/code> and &lt;code>SSD_GoogleNetV2.bin&lt;/code> in the Downloads folder.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo.py --input_model ~/Downloads/SSD_GoogleNetV2.caffemodel --input_proto ~/Downloads/SSD_GoogleNetV2_Deploy.prototxt --output_dir ~/Downloads/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This generates two IR (Intermediate Representation) files &lt;code>SSD_GoogleNetV2.xml&lt;/code> and &lt;code>SSD_GoogleNetV2.bin&lt;/code> in the Downloads folder.&lt;/p>
 &lt;h3 id="inference-engine">Inference Engine&lt;/h3>
 &lt;p>There are many samples included in the inference engine directory. I’ll try the object detection SSD sample. First, build the examples.&lt;/p>
-&lt;pre tabindex="0">&lt;code>cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples
-cmake .
-sudo make install
-cd intel64/Release
-&lt;/code>&lt;/pre>&lt;p>Now run the Object Detection Demo SSD Async using&lt;/p>
-&lt;pre tabindex="0">&lt;code>./object_detection_demo_ssd_async -i /opt/awscam/out/ch2_out.mjpeg -m ~/Downloads/SSD_GoogleNetV2.xml -d CPU
-&lt;/code>&lt;/pre>&lt;p>You should see a stream with predictions. The frame rate averages between 1 and 2 frames per second.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo make install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd intel64/Release
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now run the Object Detection Demo SSD Async using&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>./object_detection_demo_ssd_async -i /opt/awscam/out/ch2_out.mjpeg -m ~/Downloads/SSD_GoogleNetV2.xml -d CPU
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You should see a stream with predictions. The frame rate averages between 1 and 2 frames per second.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/06/screenshot.png?resize=1024%2C576&amp;amp;ssl=1" alt="SSD Inference example">
+&lt;figcaption>Inference Engine SSD Sample&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
 &lt;p>This is a very cool tool to have. I had trouble getting a screenshot of better fps performance, since performing any other task, like taking a screenshot, hangs the application for a few seconds. It is critically designed to handle the Inference Engine and AWS lambda and greengrass. I wouldn’t use it for timing critical applications, in such cases it’s better to offload inference to the Movidius NCS anyway. But to try out vision based deep learning at home, this is awesome. The toolkit currently under active development. The Python SDK was in preview when I got the DeepLens but it is now available in a newer release. Unlike my usual problem with running out of ports on SBCs, the DeepLens has a few free ports. Let’s see how I can integrate this into a project.&lt;/p></content></item><item><title>Redbot Extreme</title><link>https://www.impulsiverobotics.com/posts/2018-05-02-redbot-extreme/</link><pubDate>Wed, 02 May 2018 01:38:43 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-05-02-redbot-extreme/</guid><description>After watching Professor Magnus Egerstedt speak at my college about swarm robotics, I thought I’d take the course he taught on Coursera called Control of Mobile Robots. It’s a very good course that was designed a few years ago and has an optional hardware track included. They made this part optional since it’s very difficult to keep up with ever changing DIY hardware and availability across the world. I wanted to try and follow the hardware part as well, so I went on a search for similar parts and got the newer Redbot with the Shadow Chassis.</description><content>&lt;p>After watching &lt;a href="https://magnus.ece.gatech.edu/">Professor Magnus Egerstedt&lt;/a> speak at my college about swarm robotics, I thought I’d take the course he taught on Coursera called &lt;a href="https://www.coursera.org/learn/mobile-robot">Control of Mobile Robots&lt;/a>. It’s a very good course that was designed a few years ago and has an optional hardware track included. They made this part optional since it’s very difficult to keep up with ever changing DIY hardware and availability across the world. I wanted to try and follow the hardware part as well, so I went on a search for similar parts and got the newer Redbot with the Shadow Chassis. Although very sturdy, the robot didn’t have enough space or mounting options for Sharp IR sensors that were needed for the course. I made do with some double sided tape, but it was still a pain. This robot was much sturdier than the usual robots with mounting holes everywhere, but still lacked something to make it a better learning platform. So I thought I’d make a few enhancements.&lt;/p>
 &lt;h3 id="parts">Parts&lt;/h3>
 &lt;ul>
@@ -81,24 +104,36 @@ cd intel64/Release
 &lt;p>I found an existing design on Thingiverse for struts with holes for a ToF sensor (which was in turn supposed to be a drop-in replacement for the Sharp IR sensor) so I got those printed and decided to modify the part for a Raspberry Pi camera.&lt;/p>
 &lt;p>Pretty straightforward, attach the struts to the bottom base first. Begin with the camera strut in the front center, and then add the four sensors on the corners and, if you want, you can add a fifth proximity sensor in the back (if you don’t mind charging the battery when it is in the chassis, since the sensor at the back blocks the battery).&lt;/p>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124412.jpg?resize=1024%2C813&amp;amp;ssl=1" alt="without the top on">
 &lt;/p>
 &lt;p>If you want to go beyond this step, I don’t think you should attach the top portion yet. Otherwise, you can attach it right now, making sure the LiPo battery terminals stick out the back end.&lt;/p>
 &lt;h4 id="make-mounting-holes-and-connect-raspberry-pi">Make Mounting holes and connect Raspberry Pi&lt;/h4>
 &lt;p>Pretty straightforward here too. Place your pi on the top part of the chassis, mark the holes and drill, I used a Dremel. Also make mounting holes on the side for the regulator. You can technically drill a hole after assembling the top part, but there’s a very high chance of puncturing the battery and causing an explosion. Don’t be stupid. Don’t do that. Please. I know it’s tempting.&lt;/p>
 &lt;p>Screw on some Nylon spacers and then the Raspberry Pi on top of that (I used spacers long enough to stick a Neural Compute Stick in the side without hitting the wheels, but that’s pointless, as you’ll soon realize).&lt;/p>
 &lt;p>
-&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="">
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/IMG_20180502_124640.jpg?resize=1024%2C736&amp;amp;ssl=1" alt="closeup">
 &lt;/p>
 &lt;h4 id="check-connections-snap-together-drive-around">Check connections, snap together, drive around&lt;/h4>
 &lt;p>Check if you connected everything and then attach the top part of the RedBot. I used the Raspberry Pi 3 B+ not to look fancy but because many complex-er libraries aren’t compatible with it yet, but the &lt;a href="https://elinux.org/RPi-Cam-Web-Interface">RPi-Cam-Web-Interface&lt;/a> works, and it’s fun when you drive around with it. I had the ZigBee module on the Redbot and a controller from earlier, so that’s how it’s being driven around. I don’t think it’d be straightforward to have ZigBee comms coexist with serial communications with the Raspberry Pi, so don’t try adding a ZigBee module if you have no use for it.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/05/ezgif-1-b9451edde9.gif?resize=600%2C338&amp;amp;ssl=1" alt="POV cam gif">
+&lt;figcaption>A gif of a video of a video.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>(On a side note, the text on the top looks familiar from a &lt;a href="https://youtu.be/sUfqmjM9_VE?t=4m">TechCrunch Disrupt video&lt;/a>.. and this web interface only works with the Raspberry Pi Camera Module. hmm..)&lt;/p>
 &lt;h3 id="conclusions">Conclusions&lt;/h3>
 &lt;p>If I had such sturdy proximity sensors when taking the Coursera course, it would’ve helped a lot. The simple single phase hall effect sensor based encoders kept me from overhauling the robot thinking it would be pointless. Quadrature encoders would’ve been sweet. After adding the camera, I realized it was pointless trying to extract a lot of info from a POV that was so low, so point in adding a Neural Compute stick or trying to piggyback a Google Vision kit on the RedBot: it’s just way too low for object recognition (or to just fit an entire object in its frame)&lt;/p>
 &lt;p>Want to take it further? Only sensible thing without going over the top would be to connect via I2C or USB. I was talking to a friend about this robot and he suggested we implement a machine learning algorithm on the robot. Since the algorithm’s output only needs to be throttle values for the two motors, we don’t really need the encoders. I was interested and saw a &lt;a href="https://www.youtube.com/watch?v=WtEYMELvRHI">similar project video on Youtube&lt;/a> for obstacle avoidance. Both of us have finals soon, so more on that after.&lt;/p></content></item><item><title>Google Assistant Mini</title><link>https://www.impulsiverobotics.com/posts/2018-04-16-google-assistant-mini/</link><pubDate>Mon, 16 Apr 2018 09:16:02 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-04-16-google-assistant-mini/</guid><description>When Google announced the AIY Voice Kit, I was very excited. The last time I was that excited, the Raspberry Pi Zero was announced. Once I realized it was being sold along with MagPi, the realization kicked in: I wasn’t going to get my hands on one of these easily, since they sell very very fast. I remember subscribing to a whole year of MagPi and getting it shipped to India so I could get my hands on that one Raspberry Pi Zero with the magazine which was otherwise sold out.</description><content>&lt;p>When Google announced the AIY Voice Kit, I was very excited. The last time I was that excited, the Raspberry Pi Zero was announced. Once I realized it was being sold along with MagPi, the realization kicked in: I wasn’t going to get my hands on one of these easily, since they sell very very fast. I remember subscribing to a whole year of MagPi and getting it shipped to India so I could get my hands on that one Raspberry Pi Zero with the magazine which was otherwise sold out. Forget WiFi, it didn’t even have a camera connector then! So I REALLY wanted the Voice Kit, and like I guessed, it was sold out.&lt;/p>
-&lt;p>As of writing this post, the Google AIY Voice Kit is available and pretty cheap too. But then the hot AIY product now is the Google AIY Vision Kit, &lt;!-- raw HTML omitted -->which is also something I REALLY want at the moment, but is sold out&lt;!-- raw HTML omitted --> which is in stock now. It ships with the Movidius 2 like the Neural Compute Stick, and I want it so bad that I &lt;!-- raw HTML omitted -->often find myself scrolling through eBay questioning myself if spending &amp;gt;$120 on it is worth it. (It would otherwise cost $45)&lt;!-- raw HTML omitted --> got it.&lt;/p>
+&lt;p>As of writing this post, the Google AIY Voice Kit is available and pretty cheap too. But then the hot AIY product now is the Google AIY Vision Kit, &lt;del>which is also something I REALLY want at the moment, but is sold out&lt;/del> which is in stock now. It ships with the Movidius 2 like the Neural Compute Stick, and I want it so bad that I &lt;del>often find myself scrolling through eBay questioning myself if spending &amp;gt;$120 on it is worth it. (It would otherwise cost $45)&lt;/del> got it.&lt;/p>
 &lt;p>Since saying “I couldn’t build the DIY kit because it was sold out” is self-contradictory, I looked through the interwebs to see if I could find anything. I went on a long journey of evaluating various boards with mic arrays, which I will talk about in another post. There was a small board that I liked called the ReSpeaker 2 mics Hat and it was by Seeed Studio, a company with a stronger track record for DIY projects than the other boards I tried.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://lh3.googleusercontent.com/mpveHjQiNUHVGsi75EJOu3Vzhrl1SJgxF5uII5zxRHThTZmcfRCEX42bO4JEx70Bstbie0KUvA3HtzDmJ2HoEBWfPe-XMunumMqKG8vXnm3Dw_J5FBKJpCdU2mxJtCnLjoeKlsc5PGv4bSjL03ryqBfpHhh3taHI5n0XZfOsbpZpgKovC8EBDic-PgSwIZ5X42djHHrT0oICz8SaRWKm1L634HBME-0LkGeyIv35iO5CUwaLwyuvCYSsRZG7Cw3wNXy_ME9G50gzRXG5XxcjQ-E27w3__okQquNyS0zexyiii7VORM-pxDeHlX47ftLZ1GHzZhZvgebwXWydOHhx7ZICVKVsHIV7C-Gj4RKF4C1IFpFv3ZZz1hZsmGI28iaTj5f0KYUj8UcKZUPTydgjbDhZgOKFeSXHLGK4RNP5rM-aLRcspSXnkB28f2CbKIGy4qGdBBNA2s4XPEVKeUpn6cRTFBToL2RfghJ4tSvxcK_jc9PBedEYWle-_NIqdoi1H8RpuNzVIcXQW3jEcY4T9Cvu_3Mmy4OajLYfmPPN5CvNMWry2K6R7LlXXakGWa09EiH60xZKX108wd45XXqMxnoBVloUXqAKnEl32Ty0xA-wsLKOj1MgltJD8pWXb8ujs4K_litDrBVTWOh0Rv5XV9bubHHnoZN-1zgDgb12I4ZyvYysEdO09OIzI3cHKQVOePU6lm2qrysXZj4XjGONHyuldUnpMIxWdvScmzuomSRHX1LujvKKCBAiHOlesGM=w1726-h1294-no?authuser=0" alt="ReSpeaker 2-Mics Pi HAT">
+&lt;figcaption>Seeed Studio’s ReSpeaker 2-Mics Pi HAT&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>It was mysteriously out of stock at the time, and I attributed it to Seeed Studio pushing their other line of &lt;a href="https://www.seeedstudio.com/ReSpeaker-Core-v2.0-p-3039.html">ReSpeaker products&lt;/a>, but as of writing this post they’re &lt;a href="https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html">back in stock&lt;/a>, and at half the price I got them for (on Amazon).&lt;/p>
 &lt;p>This board has everything you need to get started on the Google Assistant. There is no EEPROM like the AIY kit, but the official Google Assistant SDK doesn’t work on the Raspberry Pi Zero out of the box anyway, so we don’t really need it. It even has a button and three RGB LEDs! If the AIY Voice Kit was the DIY equivalent of the Google Home, I guess this is the DIY equivalent of the Google Home Mini. As always, I over-planned all the things I thought I could do with this and hit a few roadblocks, but let’s see how far we can go.&lt;/p>
 &lt;h3 id="parts">Parts&lt;/h3>
 &lt;ul>
@@ -117,26 +152,26 @@ cd intel64/Release
 &lt;h3 id="configuring-the-raspberry-pi">Configuring the Raspberry Pi&lt;/h3>
 &lt;h5 id="ssh-into-the-pi">SSH into the Pi&lt;/h5>
 &lt;p>When you’re building Raspberry Pi projects that are always connected to the internet, you must configure them to change default values. So let’s first ssh into the Pi, the default username is &lt;code>pi&lt;/code> and password is &lt;code>raspberry&lt;/code> and can be found at &lt;code>raspberrypi.local&lt;/code> (or look up the pi’s IP address)&lt;/p>
-&lt;pre tabindex="0">&lt;code>ssh pi@raspberrypi.local
-&lt;/code>&lt;/pre>&lt;h5 id="change-default-user-password">Change default user password&lt;/h5>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ssh pi@raspberrypi.local
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h5 id="change-default-user-password">Change default user password&lt;/h5>
 &lt;p>Once you’ve logged in it’s good practice to get used to immediately changing the default user’s (&lt;code>pi&lt;/code>) password. This ensures someone else doesn’t guess your Raspberry Pi’s default password. Change the password by using the &lt;code>passwd&lt;/code> command.&lt;/p>
 &lt;h5 id="change-hostname-optional">Change hostname (Optional)&lt;/h5>
 &lt;p>If you thought &lt;code>raspberrypi.local&lt;/code> sounds too common, we’re going to change that next. If you’re amazing at remembering numbers you can just stick to the IP address (hence the optional step). Start by typing&lt;/p>
-&lt;pre tabindex="0">&lt;code>sudo raspi-config
-&lt;/code>&lt;/pre>&lt;p>in the configuration menu select &lt;code>Network Options&lt;/code> and then select &lt;code>Hostname&lt;/code>. Change it to whatever you want. I’m naming this one &lt;code>google-assistant-mini&lt;/code>. Also enable SPI in &lt;code>Interfacing Options&lt;/code>. If the config menu doesn’t ask you to reboot when you say finish, do it yourself by typing &lt;code>sudo reboot&lt;/code> in the terminal. The pi should now reboot, this time with the new hostname. (Optional: Now would be a good time to remove the old hostname from your computer’s ssh records by running &lt;code>ssh-keygen -R raspberrypi.local&lt;/code>. This ensures there’s no problem when setting up another pi).&lt;br>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo raspi-config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>in the configuration menu select &lt;code>Network Options&lt;/code> and then select &lt;code>Hostname&lt;/code>. Change it to whatever you want. I’m naming this one &lt;code>google-assistant-mini&lt;/code>. Also enable SPI in &lt;code>Interfacing Options&lt;/code>. If the config menu doesn’t ask you to reboot when you say finish, do it yourself by typing &lt;code>sudo reboot&lt;/code> in the terminal. The pi should now reboot, this time with the new hostname. (Optional: Now would be a good time to remove the old hostname from your computer’s ssh records by running &lt;code>ssh-keygen -R raspberrypi.local&lt;/code>. This ensures there’s no problem when setting up another pi).&lt;br>
 SSH into the pi again, but with the new hostname this time&lt;/p>
-&lt;pre tabindex="0">&lt;code>ssh pi@google-assistant-mini.local
-&lt;/code>&lt;/pre>&lt;p>Once you’re in, make sure everything is up-to-date by running&lt;/p>
-&lt;pre tabindex="0">&lt;code>sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-&lt;/code>&lt;/pre>&lt;p>If you’re like me and installed the lite version of the OS, git and pip aren’t included and we need them to install drivers for the ReSpeaker Hat. So do that by running&lt;/p>
-&lt;pre tabindex="0">&lt;code>sudo apt-get install git python-pip
-&lt;/code>&lt;/pre>&lt;h3 id="install-drivers-for-the-respeaker-hat">Install drivers for the ReSpeaker Hat&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ssh pi@google-assistant-mini.local
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once you’re in, make sure everything is up-to-date by running&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo apt-get update &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> sudo apt-get upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you’re like me and installed the lite version of the OS, git and pip aren’t included and we need them to install drivers for the ReSpeaker Hat. So do that by running&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo apt-get install git python-pip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="install-drivers-for-the-respeaker-hat">Install drivers for the ReSpeaker Hat&lt;/h3>
 &lt;p>Information for installing the software can be found on the product’s &lt;a href="https://github.com/respeaker/seeed-voicecard">Github page&lt;/a>. Check out their &lt;a href="https://github.com/respeaker/mic_hat">project page&lt;/a> to test the RGB LEDs on the hat. The Google Assistant example on that page is for the library, which isn’t compatible on the pi zero.&lt;/p>
 &lt;h3 id="set-up-google-assistant">Set up Google Assistant&lt;/h3>
 &lt;p>The Raspberry Pi Zero W is &lt;a href="https://developers.google.com/assistant/sdk/overview#features">not supported&lt;/a> by the Google Assistant Library. It did work for a while in the beginning, but it doesn’t work at all anymore. Since we can’t use the library, that leaves us with the Google Assistant Service with the gRPC API.&lt;/p>
 &lt;p>Follow the &lt;a href="https://developers.google.com/assistant/sdk/guides/service/python/">Google Assistant Service setup guide&lt;/a>. Everything should be straightforward.&lt;/p>
 &lt;p>And that… was pretty simple to set up. There were driver issues with the hat and the Google Assistant setup for the Pi Zero wasn’t this straightforward when I first got the hat. Then again, that wasn’t too long ago. It’s amazing how fast this side of DIY is moving.&lt;/p>
-&lt;p>I really liked this board because it’s got just enough to properly emulate a Google Home device. The LEDs can be used to give feedback, the respeaker hat repository has a video of the push button example, but we could use that for the mute button on the Google Home. So the next thing to work on would be to run the assistant along with the LEDs &lt;!-- raw HTML omitted -->and probably try a headless setup.&lt;!-- raw HTML omitted --> (&lt;a href="https://github.com/shivasiddharth/GassistPi/issues/136#issuecomment-362110323">&lt;em>update: Google bein’ sly&lt;/em>&lt;/a>)&lt;/p>
+&lt;p>I really liked this board because it’s got just enough to properly emulate a Google Home device. The LEDs can be used to give feedback, the respeaker hat repository has a video of the push button example, but we could use that for the mute button on the Google Home. So the next thing to work on would be to run the assistant along with the LEDs &lt;del>and probably try a headless setup.&lt;/del> (&lt;a href="https://github.com/shivasiddharth/GassistPi/issues/136#issuecomment-362110323">&lt;em>update: Google bein’ sly&lt;/em>&lt;/a>)&lt;/p>
 &lt;h3 id="next-steps">Next Steps?&lt;/h3>
 &lt;p>I had a few add-on ideas that could have been slightly overkill for the project, so I stopped myself from putting those on the main discussion.&lt;/p>
 &lt;h4 id="speaker">Speaker.&lt;/h4>
@@ -167,8 +202,8 @@ SSH into the pi again, but with the new hostname this time&lt;/p>
 &lt;h4 id="microcontroller-circuit">Microcontroller Circuit&lt;/h4>
 &lt;p>Looking at all the room I had on the top, I wanted to keep this as wire-clean as possible. The three motors needed 6 PWM capable pins (2 each) to drive, and 6 (preferably) interrupt capable pins for encoders. This rules out almost all AVR Arduino boards with a small footprint. This also rules out being able to add enough sensors to the microcontroller. For awesome compatibility, as usual, I decided to go for an Adafruit Feather board. I didn’t want a feather with an extra chip on-board for wireless (WiFi or BLE), I wanted to try out the new ESP32 instead. What’s more interesting is that the chip also supports rosserial, making it swappable with other Huzzah boards. ESP32 guzzles too much power? For what I had in mind for this project, it doesn’t really amount to that much. Plus, if you want to make the robot without the UP Core, the onboard 5v regulators on the L298N drivers should be more than enough to power the microcontroller.&lt;/p>
 &lt;p>The ARM M0+, Teensy and ESP32 feather boards have all interrupt capable pins.&lt;/p>
-&lt;p>&lt;!-- raw HTML omitted -->&lt;em>TODO : Solder I2C Female Header Pins for IMU&lt;/em>&lt;!-- raw HTML omitted --> Not required, yet.&lt;/p>
-&lt;p>&lt;!-- raw HTML omitted -->&lt;em>TODO : &lt;a href="https://forums.adafruit.com/viewtopic.php?f=24&amp;amp;t=112430&amp;amp;p=562071&amp;amp;hilit=diode+usb+power">Solder diode to protect USB from external power&lt;/a>&lt;/em>&lt;!-- raw HTML omitted --> – Done&lt;/p>
+&lt;p>&lt;del>&lt;em>TODO : Solder I2C Female Header Pins for IMU&lt;/em>&lt;/del> Not required, yet.&lt;/p>
+&lt;p>&lt;del>&lt;em>TODO : &lt;a href="https://forums.adafruit.com/viewtopic.php?f=24&amp;amp;t=112430&amp;amp;p=562071&amp;amp;hilit=diode+usb+power">Solder diode to protect USB from external power&lt;/a>&lt;/em>&lt;/del> – Done&lt;/p>
 &lt;p>&lt;em>TODO : Add Step Down Regulator to power UP Core&lt;/em>&lt;/p>
 &lt;h4 id="computer-mount">Computer Mount&lt;/h4>
 &lt;p>After I thought of the possibility of using the realsense camera, I began thinking of how to mount the UP Board AND the microcontroller on the same plane (along with the camera). More than the space, I was worried about the connection to the camera. The UP Board has a USB 3.0 OTG port, which needs an adapter before connecting to the USB cable to the camera. I had troubles with the R200 before, and I didn’t want to take any chances. While I was thinking about this, I found that the UP core had released. While I was contemplating spending on the UP Core, the UP Board team decided to put a sticky banner on their homepage with a countdown announcing AI on the edge. I was very excited about it and decided to wait it out instead of buying the UP Core. After the countdown, I realized it was just a pre-order launch of a PCIe card for the Movidius 2 chip and an announcement of a really cool UP Core Plus board (with actual photos of expansion boards) which I can’t buy right now anyway.&lt;/p>
@@ -190,48 +225,59 @@ SSH into the pi again, but with the new hostname this time&lt;/p>
 &lt;h3 id="setting-up-the-software">Setting up the software&lt;/h3>
 &lt;h4 id="setting-up-orb-slam2">Setting up ORB-SLAM2&lt;/h4>
 &lt;p>ORB-SLAM2 was one of the first SLAM libraries that I heard of. I decided to go with this. The software setup is pretty straightforward. Follow the instructions on the &lt;a href="https://github.com/raulmur/ORB_SLAM2">Github page&lt;/a>. Setup the prerequisites as mentioned in the page carefully making sure all of them are installed properly. Before running the final &lt;code>./build.sh&lt;/code> script, we need to make a very tiny change. The UP Core might not &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/242">run out of memory during the build&lt;/a>. Mine kept getting stuck at 59% before it said virtual memory ran out. Open the &lt;code>build.sh&lt;/code> file and changed the last line from&lt;/p>
-&lt;pre tabindex="0">&lt;code>make -j
-&lt;/code>&lt;/pre>&lt;p>to&lt;/p>
-&lt;pre tabindex="0">&lt;code>make -j1
-&lt;/code>&lt;/pre>&lt;p>you could try sensible higher numbers, I haven’t tried it though. I took help from a &lt;a href="https://medium.com/@j.zijlmans/orb-slam-2052515bd84c">medium article&lt;/a> and tried working on the TU-Munich dataset. Everything worked fine but the viewer kept freezing at the end. There were a few open issues mentioning that &lt;!-- raw HTML omitted --> and I don’t think it’s something that affects the core software I thought I’d go ahead with ROS&lt;!-- raw HTML omitted --> &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/547">and turns out you need to install an older version of Pangolin&lt;/a>.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>make -j
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>to&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>make -j1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>you could try sensible higher numbers, I haven’t tried it though. I took help from a &lt;a href="https://medium.com/@j.zijlmans/orb-slam-2052515bd84c">medium article&lt;/a> and tried working on the TU-Munich dataset. Everything worked fine but the viewer kept freezing at the end. There were a few open issues mentioning that &lt;del> and I don’t think it’s something that affects the core software I thought I’d go ahead with ROS&lt;/del> &lt;a href="https://github.com/raulmur/ORB_SLAM2/issues/547">and turns out you need to install an older version of Pangolin&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/ezgif-4-be7aa06151.gif?resize=600%2C338&amp;amp;ssl=1" alt="ORB-SLAM2 gif">
+&lt;figcaption>ORB-SLAM2 working on the TUM1 dataset. Another gif, sorry.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h4 id="getting-camera-parameters">Getting Camera Parameters&lt;/h4>
 &lt;p>So the Intel D400 cameras come with factory loaded parameters, and they’re published on a topic in the realsense ROS node. We can get those parameters by running &lt;code>rostopic echo /camera/color/camera_info&lt;/code>, This is what the output looks like&lt;/p>
-&lt;pre tabindex="0">&lt;code>header:
-seq: 47
-stamp:
-secs: 1529978641
-nsecs: 358682339
-frame_id: &amp;#34;camera_color_optical_frame&amp;#34;
-height: 480
-width: 640
-distortion_model: &amp;#34;plumb_bob&amp;#34;
-D: [0.0, 0.0, 0.0, 0.0, 0.0]
-K: [616.7030029296875, 0.0, 300.7779235839844, 0.0, 616.4176025390625, 234.95497131347656, 0.0, 0.0, 1.0]
-R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
-P: [616.7030029296875, 0.0, 300.7779235839844, 0.0, 0.0, 616.4176025390625, 234.95497131347656, 0.0, 0.0, 0.0, 1.0, 0.0]
-binning_x: 0
-binning_y: 0
-roi:
-x_offset: 0
-y_offset: 0
-height: 0
-width: 0
-do_rectify: False
----
-&lt;/code>&lt;/pre>&lt;p>The parameters published in the camera ROS topic gives us the values for fx, fy, cx, cy from K, and k1, k2, p1, p2, k3 from D (&lt;a href="https://github.com/IntelRealSense/librealsense/blob/165ae36b350ca950e4180dd6ca03ca6347bc6367/third-party/realsense-file/rosbag/msgs/sensor_msgs/CameraInfo.h#L268">more info&lt;/a>). From the &lt;a href="https://www.intel.com/content/dam/support/us/en/documents/emerging-technologies/intel-realsense-technology/Intel-RealSense-D400-Series-Datasheet.pdf">datasheet&lt;/a>, we get the baseline to be 55mm for D415 and 50mm for D435. The value for bf is &lt;code>bf = baseline (in meters) * fx&lt;/code>. This is the YAML file I used for D415&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">header&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">seq&lt;/span>: &lt;span style="color:#ae81ff">47&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">stamp&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">secs&lt;/span>: &lt;span style="color:#ae81ff">1529978641&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">nsecs&lt;/span>: &lt;span style="color:#ae81ff">358682339&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">frame_id&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;camera_color_optical_frame&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">height&lt;/span>: &lt;span style="color:#ae81ff">480&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">width&lt;/span>: &lt;span style="color:#ae81ff">640&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">distortion_model&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;plumb_bob&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">D&lt;/span>: [&lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">K&lt;/span>: [&lt;span style="color:#ae81ff">616.7030029296875&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">300.7779235839844&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">616.4176025390625&lt;/span>, &lt;span style="color:#ae81ff">234.95497131347656&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">R&lt;/span>: [&lt;span style="color:#ae81ff">1.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">P&lt;/span>: [&lt;span style="color:#ae81ff">616.7030029296875&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">300.7779235839844&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">616.4176025390625&lt;/span>, &lt;span style="color:#ae81ff">234.95497131347656&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>, &lt;span style="color:#ae81ff">1.0&lt;/span>, &lt;span style="color:#ae81ff">0.0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">binning_x&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">binning_y&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">roi&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">x_offset&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">y_offset&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">height&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">width&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">do_rectify&lt;/span>: &lt;span style="color:#66d9ef">False&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The parameters published in the camera ROS topic gives us the values for fx, fy, cx, cy from K, and k1, k2, p1, p2, k3 from D (&lt;a href="https://github.com/IntelRealSense/librealsense/blob/165ae36b350ca950e4180dd6ca03ca6347bc6367/third-party/realsense-file/rosbag/msgs/sensor_msgs/CameraInfo.h#L268">more info&lt;/a>). From the &lt;a href="https://www.intel.com/content/dam/support/us/en/documents/emerging-technologies/intel-realsense-technology/Intel-RealSense-D400-Series-Datasheet.pdf">datasheet&lt;/a>, we get the baseline to be 55mm for D415 and 50mm for D435. The value for bf is &lt;code>bf = baseline (in meters) * fx&lt;/code>. This is the YAML file I used for D415&lt;/p>
+&lt;script src="https://gist.github.com/nagarjunredla/8e5e33db93d06c1bd0ebdcd57e093294.js">&lt;/script>
 &lt;h4 id="setting-up-ros-node">Setting up ROS node&lt;/h4>
 &lt;p>Since the realsense node publishes camera data on &lt;code>/camera/color/image_raw&lt;/code> and depth data on &lt;code>/camera/depth/image_rect_raw&lt;/code> we need to change it to these links in &lt;code>~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/src/ros_rgbd.cc&lt;/code>. After that make sure you have ROS_PACKAGE_PATH pointed to the right directory of ORB_SLAM2 and run &lt;code>./build_ros.sh&lt;/code>&lt;/p>
 &lt;h4 id="running-the-nodes">Running the nodes&lt;/h4>
 &lt;p>In one terminal, start &lt;code>roscore&lt;/code>. In another terminal, source the environment variables of ORB SLAM2&lt;/p>
-&lt;pre tabindex="0">&lt;code>source ~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
-&lt;/code>&lt;/pre>&lt;p>and then run the node with&lt;/p>
-&lt;pre tabindex="0">&lt;code>rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
-&lt;/code>&lt;/pre>&lt;p>Once the ORB SLAM node is running, open a third terminal window and run the Intel Realsense node. The output should look like this&lt;/p>
-&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>source ~/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and then run the node with&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once the ORB SLAM node is running, open a third terminal window and run the Intel Realsense node. The output should look like this&lt;/p>
+&lt;p>&lt;span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe allowfullscreen="true" class="youtube-player" height="360" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" src="https://www.youtube.com/embed/yl6MgnYNDE8?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" style="border:0;" width="640">&lt;/iframe>&lt;/span>&lt;/p>
 &lt;p>As you can see, ORB SLAM initializes immediately and rarely loses tracking. I tried using Monocular version with footage from my Ryze Tello, but it took a while to initialize and kept losing track. The RGB-D version looks much more reliable. I was surprised to see that the UP Core handled it well.&lt;/p>
 &lt;p>I wanted to evaluate ORB-SLAM2 with an RGBD camera only because my monocular tests were failing because of calibration problems or poor image quality. To be fair I tried it on the Ryze (DJI?) Tello. I got some buggy results:&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/tello_slam_gif.gif?resize=600%2C290&amp;amp;ssl=1" alt="Tello SLAM gif">
+&lt;figcaption>kept losing track often&lt;/figcaption>
+&lt;/figure>
+Next step would be to try RTAB-Map. It’s catkinized and has a better dev community.&lt;/p>
 &lt;p>Since the robot is built and and it’s compute capability is validated, next steps are to write Arduino code for the HUZZAH32 board. The kit came with faulty wheel encoders and even though Robotshop sent me replacements for two motors, one of them was still faulty. So now I have 5 motors with 2 functioning wheel encoders.&lt;/p></content></item><item><title>Micro Self Balancing Robot</title><link>https://www.impulsiverobotics.com/posts/2018-04-08-micro-self-balancing-robot-fail/</link><pubDate>Sun, 08 Apr 2018 23:15:05 +0000</pubDate><guid>https://www.impulsiverobotics.com/posts/2018-04-08-micro-self-balancing-robot-fail/</guid><description>My interest in Control Systems grew in graduate school. Weirdly it was one of the subjects we wanted to run away from during my undergraduate days when we weren’t given the independence to choose our own subjects. At UIUC, I grew fond of the subject after attending a few lectures. The only problem was that there’s a chunk of Control Systems basics that isn’t covered in graduate school at all. Many Professors said I could skip the undergraduate class altogether, but it had a lot of hands on lab assignments that I wanted to do.</description><content>&lt;p>My interest in Control Systems grew in graduate school. Weirdly it was one of the subjects we wanted to run away from during my undergraduate days when we weren’t given the independence to choose our own subjects. At UIUC, I grew fond of the subject after attending a few lectures. The only problem was that there’s a chunk of Control Systems basics that isn’t covered in graduate school at all. Many Professors said I could skip the undergraduate class altogether, but it had a lot of hands on lab assignments that I wanted to do.&lt;/p>
 &lt;p>I went over to the &lt;a href="http://coecsl.ece.illinois.edu/">College of Engineering Control Systems Lab website&lt;/a> and found the &lt;a href="http://coecsl.ece.illinois.edu/segbot/segbot.html">Segbot&lt;/a>. Since I stay in a very small apartment, I didn’t think I had enough runway for something as big as the Segbot. This constraint also ruled out a lot of &lt;a href="https://www.thingiverse.com/thing:2306541">other&lt;/a> good designs you can find online.&lt;/p>
 &lt;p>I came across a &lt;a href="https://hackaday.io/project/11614-worlds-smallest-balancing-robot-minipiddy">hackaday post&lt;/a> for the &lt;a href="https://vine.co/v/OUwrqYE6jHV/embed/simple">MiniPIDDY&lt;/a> by Sean Hodgins. It looked so cute I wanted one for myself. And I wasn’t going to order or wait for a printed board. So I began my impulsive planning to build a mini piddybot.&lt;/p>
@@ -254,9 +300,26 @@ do_rectify: False
 &lt;h3 id="connections">Connections&lt;/h3>
 &lt;p>The connections are pretty straightforward. The MPU-9250 is connected to the micro controller via I2C and the motor driver via PWM. If you’ve noticed that the motors run on 6v and that the maximum battery output is 4.2v, you’ve already started realizing why this might fail. I decided to go for it anyway. The website said the motors would still move at voltages as low as 3v but with lower torque, seemed fair enough.&lt;/p>
 &lt;p>I don’t have many photos of the making process, so I tried using Fritzing to make it simpler. I’m new to Fritzing and I hope it’s understandable.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-6.08.10-PM.png?resize=1024%2C659&amp;amp;ssl=1" alt="Fritzing Circuit">
+&lt;figcaption>Fritzing Breadboard Circuit. Sensor stick: MPU 9250, Micro Metal Gearmotor: Sub Micro Plastic Gearmotor&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/IMG_20180408_180542.jpg?resize=128%2C300&amp;amp;ssl=1" alt="Circuit back">
+&lt;figcaption>&amp;#39;Art.&amp;#39;&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="design">Design&lt;/h3>
 &lt;p>This clearly needs a base/chassis, so I decided to 3D print it, why not? The only problem is that I never worked on CAD software. I searched for the best CAD software for dummies and found 123D Design. I literally made cylinder holes in a cuboid for the motors and made two versions: one with 35% of the cuboid cut off from the bottom and the other 40%.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p>
+&lt;figure>
+&lt;img src="https://i0.wp.com/impulsiverobotics.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-08-at-5.17.42-PM.png?resize=1024%2C534&amp;amp;ssl=1" alt="design">
+&lt;figcaption>123D Design in various stages&lt;/figcaption>
+&lt;/figure>
+I don’t intend to put the design up on Thingiverse. If you still want it, &lt;a href="https://impulsiverobotics.com/wp-content/uploads/2018/04/piddytry.zip">you can have it&lt;/a>.&lt;/p>
 &lt;h3 id="assemble">Assemble&lt;/h3>
 &lt;p>To my surprise the earlier design technique worked and the motors directly snap fit into the 35% version. I was so excited by my first snap fit mechanism that I took a picture.&lt;/p>
 &lt;p>This is the earliest one I have.&lt;/p>
